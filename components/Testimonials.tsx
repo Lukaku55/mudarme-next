@@ -60,7 +60,7 @@ const Testimonials = () => {
             rel="noopener noreferrer"
             className="text-orange-400 text-sm hover:underline"
           >
-            Ver todas las reseñas en Google →
+            Ver todas las reseñas en Google
           </a>
         </div>
 
