@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/#nosotros", label: "Nosotros" },
   { href: "/#testimonios", label: "Testimonios" },
   { href: "/#contacto", label: "Contacto" },
+  { href: "/blog", label: "Blog" },
 ];
 
 const Header = () => {
