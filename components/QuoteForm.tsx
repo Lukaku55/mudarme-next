@@ -125,8 +125,8 @@ const QuoteForm = () => {
           <form onSubmit={handleSubmit} className="bg-card border border-border rounded-2xl p-8 space-y-5">
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <label className="text-sm font-medium text-foreground/80 mb-1.5 block">Nombre</label>
-                <input
+                <label htmlFor="nombre" className="text-sm font-medium text-foreground/80 mb-1.5 block">Nombre</label>
+                <input id="nombre"
                   type="text"
                   name="nombre"
                   required
@@ -137,8 +137,8 @@ const QuoteForm = () => {
                 />
               </div>
               <div>
-                <label className="text-sm font-medium text-foreground/80 mb-1.5 block">Teléfono</label>
-                <input
+                <label htmlFor="telefono" className="text-sm font-medium text-foreground/80 mb-1.5 block">Teléfono</label>
+                <input id="telefono"
                   type="tel"
                   name="telefono"
                   required
@@ -150,8 +150,8 @@ const QuoteForm = () => {
               </div>
             </div>
             <div>
-              <label className="text-sm font-medium text-foreground/80 mb-1.5 block">Email</label>
-              <input
+              <label htmlFor="email" className="text-sm font-medium text-foreground/80 mb-1.5 block">Email</label>
+              <input id="email"
                 type="email"
                 name="email"
                 value={formData.email}
@@ -161,8 +161,8 @@ const QuoteForm = () => {
               />
             </div>
             <div>
-              <label className="text-sm font-medium text-foreground/80 mb-1.5 block">¿Hay ascensor disponible? *</label>
-              <select
+              <label htmlFor="ascensor" className="text-sm font-medium text-foreground/80 mb-1.5 block">¿Hay ascensor disponible? *</label>
+              <select id="ascensor"
                 name="ascensor"
                 required
                 value={formData.ascensor}
@@ -179,8 +179,8 @@ const QuoteForm = () => {
             {/* Origen */}
             <div className="space-y-3">
               <div>
-                <label className="text-sm font-medium text-foreground/80 mb-1.5 block">Dirección de origen</label>
-                <input
+                <label htmlFor="origen" className="text-sm font-medium text-foreground/80 mb-1.5 block">Dirección de origen</label>
+                <input id="origen"
                   type="text"
                   name="origen"
                   required
@@ -221,8 +221,8 @@ const QuoteForm = () => {
             {/* Destino */}
             <div className="space-y-3">
               <div>
-                <label className="text-sm font-medium text-foreground/80 mb-1.5 block">Dirección de destino</label>
-                <input
+                <label htmlFor="destino" className="text-sm font-medium text-foreground/80 mb-1.5 block">Dirección de destino</label>
+                <input id="destino"
                   type="text"
                   name="destino"
                   required
@@ -261,8 +261,8 @@ const QuoteForm = () => {
               </div>
             </div>
             <div>
-              <label className="text-sm font-medium text-foreground/80 mb-1.5 block">Fecha estimada</label>
-              <input
+              <label htmlFor="fecha" className="text-sm font-medium text-foreground/80 mb-1.5 block">Fecha estimada</label>
+              <input id="fecha"
                 type="date"
                 name="fecha"
                 value={formData.fecha}
@@ -271,8 +271,8 @@ const QuoteForm = () => {
               />
             </div>
             <div>
-              <label className="text-sm font-medium text-foreground/80 mb-1.5 block">Detalles adicionales</label>
-              <textarea
+              <label htmlFor="detalles" className="text-sm font-medium text-foreground/80 mb-1.5 block">Detalles adicionales</label>
+              <textarea id="detalles"
                 name="detalles"
                 value={formData.detalles}
                 onChange={handleChange}
