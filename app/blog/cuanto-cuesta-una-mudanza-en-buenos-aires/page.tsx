@@ -48,7 +48,7 @@ export default function Page() {
             <p className="text-gray-300 mb-6">Las mudanzas a fin de mes son más demandadas y pueden tener un costo adicional por la alta ocupación. Las mudanzas en horario nocturno o en días especiales también pueden tener un precio diferente.</p>
 
             <h2 className="text-2xl font-bold text-white mb-4">¿Cómo obtener un presupuesto justo?</h2>
-            <p className="text-gray-300 mb-6">En La Mudanza hacemos presupuestos cerrados y sin cargo. Esto significa que el precio que te cotizamos es el que pagás, sin sorpresas al final. Para darte un presupuesto preciso necesitamos conocer el volumen aproximado de tus pertenencias, los domicilios de origen y destino, el piso y si hay ascensor, y si necesitás servicio de embalaje.</p>
+            <p className="text-gray-300 mb-6">En La Mudanza hacemos presupuestos cerrados y sin cargo. Esto significa que el precio que te cotizamos es el que pagás, sin sorpresas al final. Para darte un presupuesto preciso necesitamos conocer el volumen apróximado de tus pertenencias, los domicilios de origen y destino, el piso y si hay ascensor, y si necesitás servicio de embalaje.</p>
 
             <h2 className="text-2xl font-bold text-white mb-4">Consejos para reducir el costo de tu mudanza</h2>
             <p className="text-gray-300 mb-3">Algunos tips para optimizar el presupuesto:</p>

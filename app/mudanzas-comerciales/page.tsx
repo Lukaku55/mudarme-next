@@ -5,7 +5,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "Mudanzas Comerciales en CABA y GBA | La Mudanza",
-  description: "Mudanzas de oficinas y locales comerciales en CABA y GBA. Minimizamos el tiempo de inactividad con planificacion integral. La Mudanza, +30 años de experiencia.",
+  description: "Mudanzas de oficinas y locales comerciales en CABA y GBA. Minimizamos el tiempo de inactividad con planificación integral. La Mudanza, +30 años de experiencia.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-comerciales" },
 };
 
@@ -27,10 +27,10 @@ export default function Page() {
         <section className="bg-zinc-900 py-16 px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-white mb-4">Mudanzas de oficinas y locales comerciales</h2>
-            <p className="text-gray-300 text-lg mb-6">Una mudanza comercial requiere planificacion y coordinacion diferentes a una mudanza residencial. El tiempo es dinero y cada hora de inactividad impacta en tu negocio. En La Mudanza lo entendemos y por eso ofrecemos mudanzas comerciales planificadas para minimizar la interrupcion de tus actividades.</p>
+            <p className="text-gray-300 text-lg mb-6">Una mudanza comercial requiere planificación y coordinación diferentes a una mudanza residencial. El tiempo es dinero y cada hora de inactividad impacta en tu negocio. En La Mudanza lo entendemos y por eso ofrecemos mudanzas comerciales planificadas para minimizar la interrupcion de tus actividades.</p>
             <p className="text-gray-300 text-lg mb-6">Podemos trabajar en horarios fuera de los habituales — noches, fines de semana — para que cuando llegues el lunes a la maniana tu nueva oficina ya este lista para operar.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-              {["Trabajo en horarios nocturnos", "Mudanza de equipos informaticos", "Traslado de archivos y documentacion", "Embalaje especializado", "Coordinacion con administracion del edificio", "Presupuesto cerrado sin sorpresas"].map(item => (
+              {["Trabajo en horarios nocturnos", "Mudanza de equipos informaticos", "Traslado de archivos y documentacion", "Embalaje especializado", "Coordinacion con administración del edificio", "Presupuesto cerrado sin sorpresas"].map(item => (
                 <div key={item} className="flex gap-3 items-center bg-zinc-800 border border-zinc-700 rounded-lg p-4">
                   <span className="text-orange-500 font-bold text-lg">✓</span>
                   <span className="text-white">{item}</span>

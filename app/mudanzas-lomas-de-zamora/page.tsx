@@ -13,11 +13,11 @@ const servicios = [
   "Mudanzas al interior"
 ];
 
-const todasLasZonas = [{"nombre": "Palermo", "slug": "palermo"}, {"nombre": "Belgrano", "slug": "belgrano"}, {"nombre": "Caballito", "slug": "caballito"}, {"nombre": "Recoleta", "slug": "recoleta"}, {"nombre": "Flores", "slug": "flores"}, {"nombre": "Villa Urquiza", "slug": "villa-urquiza"}, {"nombre": "San Isidro", "slug": "san-isidro"}, {"nombre": "Mataderos", "slug": "mataderos"}, {"nombre": "Nunez", "slug": "nunez"}, {"nombre": "Almagro", "slug": "almagro"}, {"nombre": "San Telmo", "slug": "san-telmo"}, {"nombre": "Villa Devoto", "slug": "villa-devoto"}, {"nombre": "Lomas de Zamora", "slug": "lomas-de-zamora"}, {"nombre": "Quilmes", "slug": "quilmes"}, {"nombre": "Avellaneda", "slug": "avellaneda"}, {"nombre": "Moron", "slug": "moron"}, {"nombre": "Tigre", "slug": "tigre"}, {"nombre": "La Matanza", "slug": "la-matanza"}];
+const todasLasZonas = [{"nombre": "Palermo", "slug": "palermo"}, {"nombre": "Belgrano", "slug": "belgrano"}, {"nombre": "Caballito", "slug": "caballito"}, {"nombre": "Recoleta", "slug": "recoleta"}, {"nombre": "Flores", "slug": "flores"}, {"nombre": "Villa Urquiza", "slug": "villa-urquiza"}, {"nombre": "San Isidro", "slug": "san-isidro"}, {"nombre": "Mataderos", "slug": "mataderos"}, {"nombre": "Nunez", "slug": "nunez"}, {"nombre": "Almagro", "slug": "almagro"}, {"nombre": "San Telmo", "slug": "san-telmo"}, {"nombre": "Villa Devoto", "slug": "villa-devoto"}, {"nombre": "Lomás de Zamora", "slug": "lomas-de-zamora"}, {"nombre": "Quilmes", "slug": "quilmes"}, {"nombre": "Avellaneda", "slug": "avellaneda"}, {"nombre": "Moron", "slug": "moron"}, {"nombre": "Tigre", "slug": "tigre"}, {"nombre": "La Matanza", "slug": "la-matanza"}];
 
 export const metadata: Metadata = {
-  title: "Mudanzas en Lomas de Zamora | La Mudanza +30 anos de experiencia",
-  description: "Empresa de mudanzas en Lomas de Zamora. Mudanzas en Lomas de Zamora, Banfield y Temperley. Cobertura completa en el sur del Gran Buenos Aires. Presupuesto sin cargo. Llamanos al 11-2553-5500.",
+  title: "Mudanzas en Lomás de Zamora | La Mudanza +30 años de experiencia",
+  description: "Empresa de mudanzas en Lomás de Zamora. Mudanzas en Lomás de Zamora, Banfield y Temperley. Cobertura completa en el sur del Gran Buenos Aires. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-lomas-de-zamora" },
 };
 
@@ -29,8 +29,8 @@ export default function Page() {
         <section className="bg-black text-white py-16 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-orange-400 uppercase tracking-widest text-sm mb-3">Mudanzas profesionales</p>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Mudanzas en Lomas de Zamora</h1>
-            <p className="text-gray-300 text-lg mb-8">Mudanzas en Lomas de Zamora, Banfield y Temperley. Cobertura completa en el sur del Gran Buenos Aires.</p>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Mudanzas en Lomás de Zamora</h1>
+            <p className="text-gray-300 text-lg mb-8">Mudanzas en Lomás de Zamora, Banfield y Temperley. Cobertura completa en el sur del Gran Buenos Aires.</p>
             <a href="https://wa.me/541125535500" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full inline-block mr-4">
               Cotizar por WhatsApp
             </a>
@@ -42,19 +42,19 @@ export default function Page() {
 
         <section className="bg-black py-16 px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-4 text-center text-white">Empresa de mudanzas en Lomas de Zamora</h2>
-            <p className="text-gray-300 text-lg text-center">Lomas de Zamora es uno de los partidos mas poblados del sur del GBA, con una gran variedad de viviendas. En La Mudanza cubrimos todo el partido incluyendo Banfield, Temperley, Llavallol y Turdera con la misma calidad que ofrecemos en Capital.</p>
+            <h2 className="text-3xl font-bold mb-4 text-center text-white">Empresa de mudanzas en Lomás de Zamora</h2>
+            <p className="text-gray-300 text-lg text-center">Lomás de Zamora es uno de los partidos más poblados del sur del GBA, con una gran variedad de viviendas. En La Mudanza cubrimos todo el partido incluyendo Banfield, Temperley, Llavallol y Turdera con la misma calidad que ofrecemos en Capital.</p>
           </div>
         </section>
 
         <section className="bg-zinc-900 py-16 px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center text-white">Nuestros servicios en Lomas de Zamora</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center text-white">Nuestros servicios en Lomás de Zamora</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {servicios.map(s => (
                 <div key={s} className="bg-zinc-800 border border-zinc-700 rounded-lg p-6">
                   <h3 className="font-bold text-lg mb-2 text-white">{s}</h3>
-                  <p className="text-gray-400">Realizamos {s.toLowerCase()} en Lomas de Zamora con vehiculos equipados y personal capacitado.</p>
+                  <p className="text-gray-400">Realizamos {s.toLowerCase()} en Lomás de Zamora con vehiculos equipados y personal capacitado.</p>
                 </div>
               ))}
             </div>
@@ -63,12 +63,12 @@ export default function Page() {
 
         <section className="bg-black py-16 px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4 text-white">Por que elegirnos en Lomas de Zamora</h2>
+            <h2 className="text-3xl font-bold mb-4 text-white">Por que elegirnos en Lomás de Zamora</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
               <div className="p-6 border border-zinc-700 rounded-lg bg-zinc-800">
                 <p className="text-4xl font-bold text-orange-500">30</p>
                 <p className="font-bold mt-2 text-white">Anos de experiencia</p>
-                <p className="text-gray-400 text-sm mt-1">Empresa familiar con trayectoria en Lomas de Zamora</p>
+                <p className="text-gray-400 text-sm mt-1">Empresa familiar con trayectoria en Lomás de Zamora</p>
               </div>
               <div className="p-6 border border-zinc-700 rounded-lg bg-zinc-800">
                 <p className="text-4xl font-bold text-orange-500">5.0</p>
@@ -78,7 +78,7 @@ export default function Page() {
               <div className="p-6 border border-zinc-700 rounded-lg bg-zinc-800">
                 <p className="text-4xl font-bold text-orange-500">5000</p>
                 <p className="font-bold mt-2 text-white">Clientes satisfechos</p>
-                <p className="text-gray-400 text-sm mt-1">Miles de mudanzas realizadas en Lomas de Zamora</p>
+                <p className="text-gray-400 text-sm mt-1">Miles de mudanzas realizadas en Lomás de Zamora</p>
               </div>
             </div>
           </div>
@@ -86,12 +86,12 @@ export default function Page() {
 
         <section className="bg-zinc-900 py-16 px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center text-white">Preguntas frecuentes sobre mudanzas en Lomas de Zamora</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center text-white">Preguntas frecuentes sobre mudanzas en Lomás de Zamora</h2>
             <div className="space-y-4">
-              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Cuanto cuesta una mudanza desde CABA a Lomas de Zamora?</h3><p className="text-gray-400">En La Mudanza hacemos presupuestos cerrados y sin cargo. Contactanos por WhatsApp para cotizar.</p></div>
-              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Cubren Banfield y Temperley?</h3><p className="text-gray-400">Si, cubrimos todo el partido de Lomas de Zamora incluyendo Banfield, Temperley y Llavallol.</p></div>
-              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Hacen mudanzas dentro del partido de Lomas de Zamora?</h3><p className="text-gray-400">Si, tambien hacemos mudanzas dentro del mismo partido.</p></div>
-              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Tienen guardamuebles cerca de Lomas de Zamora?</h3><p className="text-gray-400">Si, contamos con depositos accesibles desde Lomas de Zamora.</p></div>
+              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Cuanto cuesta una mudanza desde CABA a Lomás de Zamora?</h3><p className="text-gray-400">En La Mudanza hacemos presupuestos cerrados y sin cargo. Contactaños por WhatsApp para cotizar.</p></div>
+              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Cubren Banfield y Temperley?</h3><p className="text-gray-400">Si, cubrimos todo el partido de Lomás de Zamora incluyendo Banfield, Temperley y Llavallol.</p></div>
+              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Hacen mudanzas dentro del partido de Lomás de Zamora?</h3><p className="text-gray-400">Si, también hacemos mudanzas dentro del mismo partido.</p></div>
+              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Tienen guardamuebles cerca de Lomás de Zamora?</h3><p className="text-gray-400">Si, contamos con depositos accesibles desde Lomás de Zamora.</p></div>
             </div>
           </div>
         </section>
@@ -124,7 +124,7 @@ export default function Page() {
         <section className="bg-orange-500 py-16 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4 text-white">Pedi tu presupuesto sin cargo</h2>
-            <p className="text-white mb-8 opacity-90">Mudanzas en Lomas de Zamora con la empresa mas confiable de CABA.</p>
+            <p className="text-white mb-8 opacity-90">Mudanzas en Lomás de Zamora con la empresa más confiable de CABA.</p>
             <a href="https://wa.me/541125535500" className="bg-white text-orange-500 font-bold py-3 px-8 rounded-full inline-block mr-4">
               Cotizar por WhatsApp
             </a>

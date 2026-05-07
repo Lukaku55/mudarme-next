@@ -47,7 +47,7 @@ const Services = () => {
             <span className="text-gradient-brand">tu mudanza</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Ofrecemos soluciones integrales para cada tipo de mudanza con equipos capacitados y vehículos adecuados.
+            Ofrecemos soluciónes integrales para cada tipo de mudanza con equipos capacitados y vehículos adecuados.
           </p>
         </div>
 

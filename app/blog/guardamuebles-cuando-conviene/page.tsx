@@ -35,7 +35,7 @@ export default function Page() {
             <h3 className="text-xl font-bold text-orange-400 mb-3">Mudanzas en etapas</h3>
             <p className="text-gray-300 mb-6">Cuando tu contrato de alquiler vence antes de que puedas entrar al nuevo lugar, el guardamuebles te permite mudarte en la fecha pactada y retirar tus cosas cuando el nuevo domicilio esté disponible. Evitás pagar doble alquiler y resolvés el problema logístico de tener que coordinar fechas exactas.</p>
 
-            <h3 className="text-xl font-bold text-orange-400 mb-3">Reformas o refacciones</h3>
+            <h3 className="text-xl font-bold text-orange-400 mb-3">Reformás o refacciónes</h3>
             <p className="text-gray-300 mb-6">Si vas a hacer una reforma importante en tu casa o departamento, el guardamuebles te permite vaciar el espacio mientras dura la obra y recuperar tus muebles cuando todo esté listo. Mucho más práctico que amontonar todo en una habitación.</p>
 
             <h3 className="text-xl font-bold text-orange-400 mb-3">Reducción de espacio</h3>
@@ -54,7 +54,7 @@ export default function Page() {
             </ul>
 
             <h2 className="text-2xl font-bold text-white mb-4">El guardamuebles de La Mudanza</h2>
-            <p className="text-gray-300 mb-6">En La Mudanza contamos con depósitos privados, limpios y vigilados las 24 horas en Buenos Aires. Ofrecemos estadías cortas y largas con precios justos según el volumen que necesitás guardar. La ventaja de usar nuestro guardamuebles es que podemos coordinar el traslado desde tu domicilio al depósito y viceversa con nuestros propios camiones, todo en un solo servicio.</p>
+            <p className="text-gray-300 mb-6">En La Mudanza contamos con depósitos privados, limpios y vigilados las 24 horas en Buenos Aires. Ofrecemos estadías cortas y largas con precios justos según el volumen que necesitás guardar. La ventaja de usar nuestro guardamuebles es que podemos coordinar el traslado desde tu domicilio al depósito y viceversa con nuestros propios camiónes, todo en un solo servicio.</p>
 
             <div className="bg-zinc-800 border border-orange-500 rounded-lg p-8 mt-8 text-center">
               <h3 className="text-2xl font-bold text-white mb-3">Consultá por nuestro servicio de guardamuebles</h3>

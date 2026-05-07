@@ -13,11 +13,11 @@ const servicios = [
   "Mudanzas al interior"
 ];
 
-const todasLasZonas = [{"nombre": "Palermo", "slug": "palermo"}, {"nombre": "Belgrano", "slug": "belgrano"}, {"nombre": "Caballito", "slug": "caballito"}, {"nombre": "Recoleta", "slug": "recoleta"}, {"nombre": "Flores", "slug": "flores"}, {"nombre": "Villa Urquiza", "slug": "villa-urquiza"}, {"nombre": "San Isidro", "slug": "san-isidro"}, {"nombre": "Mataderos", "slug": "mataderos"}, {"nombre": "Nunez", "slug": "nunez"}, {"nombre": "Almagro", "slug": "almagro"}, {"nombre": "San Telmo", "slug": "san-telmo"}, {"nombre": "Villa Devoto", "slug": "villa-devoto"}, {"nombre": "Lomas de Zamora", "slug": "lomas-de-zamora"}, {"nombre": "Quilmes", "slug": "quilmes"}, {"nombre": "Avellaneda", "slug": "avellaneda"}, {"nombre": "Moron", "slug": "moron"}, {"nombre": "Tigre", "slug": "tigre"}, {"nombre": "La Matanza", "slug": "la-matanza"}];
+const todasLasZonas = [{"nombre": "Palermo", "slug": "palermo"}, {"nombre": "Belgrano", "slug": "belgrano"}, {"nombre": "Caballito", "slug": "caballito"}, {"nombre": "Recoleta", "slug": "recoleta"}, {"nombre": "Flores", "slug": "flores"}, {"nombre": "Villa Urquiza", "slug": "villa-urquiza"}, {"nombre": "San Isidro", "slug": "san-isidro"}, {"nombre": "Mataderos", "slug": "mataderos"}, {"nombre": "Nunez", "slug": "nunez"}, {"nombre": "Almagro", "slug": "almagro"}, {"nombre": "San Telmo", "slug": "san-telmo"}, {"nombre": "Villa Devoto", "slug": "villa-devoto"}, {"nombre": "Lomás de Zamora", "slug": "lomas-de-zamora"}, {"nombre": "Quilmes", "slug": "quilmes"}, {"nombre": "Avellaneda", "slug": "avellaneda"}, {"nombre": "Moron", "slug": "moron"}, {"nombre": "Tigre", "slug": "tigre"}, {"nombre": "La Matanza", "slug": "la-matanza"}];
 
 export const metadata: Metadata = {
-  title: "Mudanzas en La Matanza | La Mudanza +30 anos de experiencia",
-  description: "Empresa de mudanzas en La Matanza. Mudanzas en San Justo, Ramos Mejia y todo el partido de La Matanza. El partido mas poblado del GBA. Presupuesto sin cargo. Llamanos al 11-2553-5500.",
+  title: "Mudanzas en La Matanza | La Mudanza +30 años de experiencia",
+  description: "Empresa de mudanzas en La Matanza. Mudanzas en San Justo, Ramos Mejia y todo el partido de La Matanza. El partido más poblado del GBA. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-la-matanza" },
 };
 
@@ -30,7 +30,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-orange-400 uppercase tracking-widest text-sm mb-3">Mudanzas profesionales</p>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Mudanzas en La Matanza</h1>
-            <p className="text-gray-300 text-lg mb-8">Mudanzas en San Justo, Ramos Mejia y todo el partido de La Matanza. El partido mas poblado del GBA.</p>
+            <p className="text-gray-300 text-lg mb-8">Mudanzas en San Justo, Ramos Mejia y todo el partido de La Matanza. El partido más poblado del GBA.</p>
             <a href="https://wa.me/541125535500" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full inline-block mr-4">
               Cotizar por WhatsApp
             </a>
@@ -43,7 +43,7 @@ export default function Page() {
         <section className="bg-black py-16 px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-4 text-center text-white">Empresa de mudanzas en La Matanza</h2>
-            <p className="text-gray-300 text-lg text-center">La Matanza es el partido mas poblado de la Argentina con mas de 1,7 millones de habitantes. Desde San Justo hasta Gonzalez Catan, el partido tiene una gran diversidad de zonas residenciales y comerciales. En La Mudanza cubrimos todo el partido con camiones equipados.</p>
+            <p className="text-gray-300 text-lg text-center">La Matanza es el partido más poblado de la Argentina con más de 1,7 millones de habitantes. Desde San Justo hasta Gonzalez Catan, el partido tiene una gran diversidad de zonas residenciales y comerciales. En La Mudanza cubrimos todo el partido con camiónes equipados.</p>
           </div>
         </section>
 
@@ -89,9 +89,9 @@ export default function Page() {
             <h2 className="text-3xl font-bold mb-8 text-center text-white">Preguntas frecuentes sobre mudanzas en La Matanza</h2>
             <div className="space-y-4">
               <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Cubren todo el partido de La Matanza?</h3><p className="text-gray-400">Si, cubrimos todo el partido incluyendo San Justo, Ramos Mejia, Ciudadela, Isidro Casanova y Gonzalez Catan.</p></div>
-              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Cuanto cuesta mudarse desde CABA a La Matanza?</h3><p className="text-gray-400">En La Mudanza hacemos presupuestos cerrados y sin cargo. Contactanos por WhatsApp para cotizar.</p></div>
-              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Hacen mudanzas dentro del partido de La Matanza?</h3><p className="text-gray-400">Si, tambien realizamos mudanzas dentro del mismo partido.</p></div>
-              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Cuanto tardan en llegar a San Justo desde CABA?</h3><p className="text-gray-400">Desde CABA llegamos a San Justo en aproximadamente 30 a 45 minutos.</p></div>
+              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Cuanto cuesta mudarse desde CABA a La Matanza?</h3><p className="text-gray-400">En La Mudanza hacemos presupuestos cerrados y sin cargo. Contactaños por WhatsApp para cotizar.</p></div>
+              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Hacen mudanzas dentro del partido de La Matanza?</h3><p className="text-gray-400">Si, también realizamos mudanzas dentro del mismo partido.</p></div>
+              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Cuanto tardan en llegar a San Justo desde CABA?</h3><p className="text-gray-400">Desde CABA llegamos a San Justo en apróximadamente 30 a 45 minutos.</p></div>
             </div>
           </div>
         </section>
@@ -112,7 +112,7 @@ export default function Page() {
               <Link href="/mudanzas-almagro" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">Almagro</Link>
               <Link href="/mudanzas-san-telmo" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">San Telmo</Link>
               <Link href="/mudanzas-villa-devoto" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">Villa Devoto</Link>
-              <Link href="/mudanzas-lomas-de-zamora" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">Lomas de Zamora</Link>
+              <Link href="/mudanzas-lomas-de-zamora" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">Lomás de Zamora</Link>
               <Link href="/mudanzas-quilmes" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">Quilmes</Link>
               <Link href="/mudanzas-avellaneda" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">Avellaneda</Link>
               <Link href="/mudanzas-moron" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">Moron</Link>
@@ -124,7 +124,7 @@ export default function Page() {
         <section className="bg-orange-500 py-16 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4 text-white">Pedi tu presupuesto sin cargo</h2>
-            <p className="text-white mb-8 opacity-90">Mudanzas en La Matanza con la empresa mas confiable de CABA.</p>
+            <p className="text-white mb-8 opacity-90">Mudanzas en La Matanza con la empresa más confiable de CABA.</p>
             <a href="https://wa.me/541125535500" className="bg-white text-orange-500 font-bold py-3 px-8 rounded-full inline-block mr-4">
               Cotizar por WhatsApp
             </a>

@@ -12,11 +12,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "¿Cuánto cuesta el guardamuebles?",
-    a: "En La Mudanza no manejamos precios fijos porque el costo depende del volumen y la duración. Te hacemos un presupuesto cerrado y sin cargo. Contactanos por WhatsApp para cotizar."
+    a: "En La Mudanza no manejamos precios fijos porque el costo depende del volumen y la duración. Te hacemos un presupuesto cerrado y sin cargo. Contactaños por WhatsApp para cotizar."
   },
   {
     q: "¿Puedo acceder a mis cosas cuando quiera?",
-    a: "Sí, coordinamos el acceso a tu depósito de lunes a sábados de 8 a 20 hs. Solo avisanos con anticipación y te preparamos el acceso."
+    a: "Sí, coordinamos el acceso a tu depósito de lunes a sábados de 8 a 20 hs. Solo avisaños con anticipación y te preparamos el acceso."
   },
   {
     q: "¿Por cuánto tiempo puedo dejar mis muebles?",
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: "¿Pueden retirar los muebles de mi domicilio?",
-    a: "Sí, ofrecemos el servicio completo: retiramos tus muebles con nuestros camiones, los llevamos al depósito y cuando los necesitás los llevamos a destino."
+    a: "Sí, ofrecemos el servicio completo: retiramos tus muebles con nuestros camiónes, los llevamos al depósito y cuando los necesitás los llevamos a destino."
   },
 ];
 
@@ -92,7 +92,7 @@ export default function GuardamuelbesPage() {
               <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 text-center">
                 <p className="text-4xl mb-3">📅</p>
                 <h3 className="font-bold text-white text-lg mb-2">Estadias flexibles</h3>
-                <p className="text-gray-400 text-sm">Desde dias hasta meses o anos, nos adaptamos a tus tiempos</p>
+                <p className="text-gray-400 text-sm">Desde dias hasta meses o años, nos adaptamos a tus tiempos</p>
               </div>
               <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 text-center">
                 <p className="text-4xl mb-3">🏭</p>
@@ -106,15 +106,15 @@ export default function GuardamuelbesPage() {
         <section className="bg-black py-16 px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-white mb-4">¿Cuándo conviene usar un guardamuebles?</h2>
-            <p className="text-gray-300 text-lg mb-8">El servicio de guardamuebles es la solución ideal en muchas situaciones cotidianas. En La Mudanza atendemos a clientes que necesitan guardar sus pertenencias por distintos motivos, y siempre encontramos la mejor solución para cada caso.</p>
+            <p className="text-gray-300 text-lg mb-8">El servicio de guardamuebles es la solución ideal en muchas situaciónes cotidianas. En La Mudanza atendemos a clientes que necesitan guardar sus pertenencias por distintos motivos, y siempre encontramos la mejor solución para cada caso.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 { titulo: "Mudanzas en etapas", desc: "Cuando tu contrato vence antes de poder entrar al nuevo lugar. Guardas todo en el deposito y lo retiras cuando el nuevo domicilio esta listo." },
-                { titulo: "Reformas y refacciones", desc: "Vacias tu hogar mientras dura la obra y recuperas tus muebles cuando todo esta listo. Mucho mas practico que amontonar todo en una habitacion." },
-                { titulo: "Reduccion de espacio", desc: "Si te mudas a un lugar mas chico y no queres deshacerte de ciertos muebles. Idealp ara muebles de valor sentimental o que pensas usar en el futuro." },
+                { titulo: "Reformás y refacciónes", desc: "Vacias tu hogar mientras dura la obra y recuperas tus muebles cuando todo esta listo. Mucho más practico que amontonar todo en una habitación." },
+                { titulo: "Reduccion de espacio", desc: "Si te mudas a un lugar más chico y no queres deshacerte de ciertos muebles. Idealp ara muebles de valor sentimental o que pensas usar en el futuro." },
                 { titulo: "Viajes o estadias en el exterior", desc: "Guarda tus pertenencias de forma segura mientras estas fuera del pais, sin dejarlas en un domicilio desocupado." },
-                { titulo: "Locales comerciales", desc: "Durante el cierre temporal de un negocio o entre mudanzas de local, el guardamuebles es la solucion mas practica y economica." },
-                { titulo: "Herencias o sucesiones", desc: "Cuando necesitas guardar el contenido de una vivienda mientras se resuelve una situacion legal o familiar." },
+                { titulo: "Locales comerciales", desc: "Durante el cierre temporal de un negocio o entre mudanzas de local, el guardamuebles es la solución más practica y economica." },
+                { titulo: "Herencias o sucesiones", desc: "Cuando necesitas guardar el contenido de una vivienda mientras se resuelve una situación legal o familiar." },
               ].map(item => (
                 <div key={item.titulo} className="bg-zinc-900 border border-zinc-700 rounded-lg p-6">
                   <h3 className="font-bold text-orange-400 text-lg mb-2">{item.titulo}</h3>
@@ -128,9 +128,9 @@ export default function GuardamuelbesPage() {
         <section className="bg-zinc-900 py-16 px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-white mb-4">Guardamuebles con respaldo profesional</h2>
-            <p className="text-gray-300 text-lg mb-6">No somos un deposito cualquiera. Con mas de 30 anos de trayectoria en el rubro de mudanzas, sabemos como manipular, embalar y almacenar cada pieza para que se mantenga en perfecto estado.</p>
+            <p className="text-gray-300 text-lg mb-6">No somos un deposito cualquiera. Con más de 30 años de trayectoria en el rubro de mudanzas, sabemos como manipular, embalar y almacenar cada pieza para que se mantenga en perfecto estado.</p>
             <p className="text-gray-300 text-lg mb-6">Todos los muebles se almacenan envueltos en mantas acolchadas y film stretch para protegerlos del polvo y los golpes. Los depositos estan climatizados, son secos y limpios, con acceso controlado y camaras de seguridad las 24 horas.</p>
-            <p className="text-gray-300 text-lg">Ofrecemos cobertura en toda CABA y Gran Buenos Aires, con retiro puerta a puerta con nuestros propios camiones. Todo en un solo servicio, sin intermediarios.</p>
+            <p className="text-gray-300 text-lg">Ofrecemos cobertura en toda CABA y Gran Buenos Aires, con retiro puerta a puerta con nuestros propios camiónes. Todo en un solo servicio, sin intermediarios.</p>
           </div>
         </section>
 
@@ -151,7 +151,7 @@ export default function GuardamuelbesPage() {
         <section className="bg-orange-500 py-16 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-white mb-4">Pedi tu presupuesto sin cargo</h2>
-            <p className="text-white mb-8 opacity-90">Contanos que necesitas guardar y te armamos una propuesta a medida. Sin compromiso.</p>
+            <p className="text-white mb-8 opacity-90">Contaños que necesitas guardar y te armamos una propuesta a medida. Sin compromiso.</p>
             <a href="https://wa.me/541125535500?text=Hola%2C%20quiero%20consultar%20por%20el%20servicio%20de%20guardamuebles" className="bg-white text-orange-500 font-bold py-3 px-8 rounded-full inline-block mr-4">
               Consultar por WhatsApp
             </a>

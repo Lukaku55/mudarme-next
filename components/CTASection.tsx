@@ -11,7 +11,7 @@ const CTASection = () => {
           <span className="text-gradient-brand">mudanza</span>?
         </h2>
         <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-10">
-          Contactanos hoy y recibí un presupuesto sin cargo en minutos. 
+          Contactaños hoy y recibí un presupuesto sin cargo en minutos. 
           Tu nueva etapa empieza con nosotros.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

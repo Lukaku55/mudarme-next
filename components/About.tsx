@@ -4,7 +4,7 @@ import { CheckCircle2 } from "lucide-react";
 const reasons = [
   "Más de 30 años de trayectoria en el rubro",
   "Personal capacitado y uniformado",
-  "Flota propia de camiones equipados",
+  "Flota propia de camiónes equipados",
   "Seguro integral en todas las mudanzas",
   "Presupuestos sin cargo y sin compromiso",
   "Puntualidad garantizada",

@@ -5,7 +5,7 @@ import { Send, Phone, MessageCircle } from "lucide-react";
 const QuoteForm = () => {
   const [formData, setFormData] = useState({
     nombre: "",
-    telefono: "",
+    teléfono: "",
     email: "",
     ascensor: "",
     origen: "",
@@ -28,7 +28,7 @@ const QuoteForm = () => {
       ? "Casa"
       : `Depto piso ${formData.pisoDestino || "N/A"}`;
     const msg = encodeURIComponent(
-      `Hola! Quiero cotizar una mudanza:\n- Nombre: ${formData.nombre}\n- Tel: ${formData.telefono}\n- Ascensor: ${formData.ascensor}\n- Origen: ${formData.origen} (${origenInfo})\n- Destino: ${formData.destino} (${destinoInfo})\n- Fecha: ${formData.fecha}\n- Detalles: ${formData.detalles}`
+      `Hola! Quiero cotizar una mudanza:\n- Nombre: ${formData.nombre}\n- Tel: ${formData.teléfono}\n- Ascensor: ${formData.ascensor}\n- Origen: ${formData.origen} (${origenInfo})\n- Destino: ${formData.destino} (${destinoInfo})\n- Fecha: ${formData.fecha}\n- Detalles: ${formData.detalles}`
     );
     window.open(`https://wa.me/541125535500?text=${msg}`, "_blank");
     setSubmitted(true);
@@ -77,7 +77,7 @@ const QuoteForm = () => {
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
               Completá el formulario y te contactamos en minutos. 
-              También podés comunicarte directamente por teléfono o WhatsApp.
+              También podés comúnicarte directamente por teléfono o WhatsApp.
             </p>
 
             <div className="space-y-4">
@@ -137,12 +137,12 @@ const QuoteForm = () => {
                 />
               </div>
               <div>
-                <label htmlFor="telefono" className="text-sm font-medium text-foreground/80 mb-1.5 block">Teléfono</label>
-                <input id="telefono"
+                <label htmlFor="teléfono" className="text-sm font-medium text-foreground/80 mb-1.5 block">Teléfono</label>
+                <input id="teléfono"
                   type="tel"
-                  name="telefono"
+                  name="teléfono"
                   required
-                  value={formData.telefono}
+                  value={formData.teléfono}
                   onChange={handleChange}
                   className="w-full bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                   placeholder="Tu teléfono"

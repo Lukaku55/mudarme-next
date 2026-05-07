@@ -31,7 +31,7 @@ export default function Page() {
             <p className="text-gray-300 mb-6">La gran mayoría de los contratos de alquiler en Argentina vencen a fin de mes. Esto genera una concentración enorme de mudanzas en los últimos 5 días del mes y los primeros 5 del mes siguiente. En esos 10 días, la demanda de empresas de mudanzas se multiplica varias veces respecto al resto del mes.</p>
 
             <h2 className="text-2xl font-bold text-white mb-4">Qué pasa cuando hay alta demanda</h2>
-            <p className="text-gray-300 mb-6">Cuando la demanda supera la oferta disponible, los precios suben y la disponibilidad se reduce. Las empresas de mudanzas tienen una cantidad limitada de camiones y personal, y cuando todos quieren mudarse al mismo tiempo, los turnos se agotan rápido. Quien reserva tarde termina pagando más o eligiendo entre las opciones menos convenientes.</p>
+            <p className="text-gray-300 mb-6">Cuando la demanda supera la oferta disponible, los precios suben y la disponibilidad se reduce. Las empresas de mudanzas tienen una cantidad limitada de camiónes y personal, y cuando todos quieren mudarse al mismo tiempo, los turnos se agotan rápido. Quien reserva tarde termina pagando más o eligiendo entre las opciones menos convenientes.</p>
 
             <h2 className="text-2xl font-bold text-white mb-4">Cómo evitar el problema</h2>
 
@@ -49,7 +49,7 @@ export default function Page() {
 
             <div className="bg-zinc-800 border border-orange-500 rounded-lg p-8 mt-8 text-center">
               <h3 className="text-2xl font-bold text-white mb-3">Reservá tu turno con tiempo</h3>
-              <p className="text-gray-300 mb-6">No esperes al último momento. Contactanos hoy y asegurá tu fecha de mudanza sin apuros.</p>
+              <p className="text-gray-300 mb-6">No esperes al último momento. Contactaños hoy y asegurá tu fecha de mudanza sin apuros.</p>
               <a href="https://wa.me/541125535500" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full inline-block mr-4">
                 Cotizar por WhatsApp
               </a>

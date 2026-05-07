@@ -27,7 +27,7 @@ export default function Page() {
         <section className="bg-zinc-900 py-16 px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-white mb-4">¿Qué es un izaje y cuándo se necesita?</h2>
-            <p className="text-gray-300 text-lg mb-6">Un izaje es la tecnica de subir o bajar muebles por el exterior del edificio usando sogas y poleas, cuando el objeto es demasiado grande para pasar por la escalera o el ascensor. Es una solucion comun en Buenos Aires donde muchos edificios tienen pasillos angostos y ascensores pequenos.</p>
+            <p className="text-gray-300 text-lg mb-6">Un izaje es la tecnica de subir o bajar muebles por el exterior del edificio usando sogas y poleas, cuando el objeto es demasiado grande para pasar por la escalera o el ascensor. Es una solución comun en Buenos Aires donde muchos edificios tienen pasillos angostos y ascensores pequenos.</p>
             <p className="text-gray-300 text-lg mb-6">En La Mudanza contamos con el equipamiento y el personal capacitado para realizar izajes de forma segura y eficiente. Trabajamos con sogas certificadas y tecnicas que garantizan la integridad del mueble y la seguridad de nuestro equipo.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
               {[
@@ -52,7 +52,7 @@ export default function Page() {
         <section className="bg-orange-500 py-16 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-white mb-4">Pedi tu presupuesto sin cargo</h2>
-            <p className="text-white mb-8 opacity-90">Izajes profesionales en CABA y GBA. Seguro, rapido y sin danos.</p>
+            <p className="text-white mb-8 opacity-90">Izajes profesionales en CABA y GBA. Seguro, rápido y sin daños.</p>
             <a href="https://wa.me/541125535500" className="bg-white text-orange-500 font-bold py-3 px-8 rounded-full inline-block mr-4">Cotizar por WhatsApp</a>
             <a href="tel:+541125535500" className="border border-white text-white font-bold py-3 px-8 rounded-full inline-block">11-2553-5500</a>
           </div>

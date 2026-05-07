@@ -45,7 +45,7 @@ export default function Page() {
             <p className="text-gray-300 mb-6">Preguntá si el personal es propio o si subcontratan. Las empresas con personal propio tienen mejor control sobre la calidad del servicio y la seguridad de tus pertenencias.</p>
 
             <h3 className="text-xl font-bold text-orange-400 mb-3">Camiones y equipamiento</h3>
-            <p className="text-gray-300 mb-6">Una empresa seria tiene camiones propios en buen estado y el equipamiento necesario: mantas acolchadas, film stretch, fajas, carretas y equipos de izaje. Preguntá por el equipamiento antes de contratar.</p>
+            <p className="text-gray-300 mb-6">Una empresa seria tiene camiónes propios en buen estado y el equipamiento necesario: mantas acolchadas, film stretch, fajas, carretas y equipos de izaje. Preguntá por el equipamiento antes de contratar.</p>
 
             <h2 className="text-2xl font-bold text-white mb-4">Señales de alerta</h2>
             <ul className="text-gray-300 mb-8 space-y-3">

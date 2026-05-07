@@ -5,11 +5,11 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import Link from "next/link";
 
 const servicios = ["Mudanzas residenciales","Mudanzas comerciales","Guardamuebles","Embalaje profesional","Izajes por balcon","Mudanzas al interior"];
-const todasLasZonas = [{"nombre": "Palermo", "slug": "palermo"}, {"nombre": "Belgrano", "slug": "belgrano"}, {"nombre": "Caballito", "slug": "caballito"}, {"nombre": "Recoleta", "slug": "recoleta"}, {"nombre": "Flores", "slug": "flores"}, {"nombre": "Villa Urquiza", "slug": "villa-urquiza"}, {"nombre": "San Isidro", "slug": "san-isidro"}, {"nombre": "Mataderos", "slug": "mataderos"}, {"nombre": "Nunez", "slug": "nunez"}, {"nombre": "Almagro", "slug": "almagro"}, {"nombre": "San Telmo", "slug": "san-telmo"}, {"nombre": "Villa Devoto", "slug": "villa-devoto"}, {"nombre": "Lomas de Zamora", "slug": "lomas-de-zamora"}, {"nombre": "Quilmes", "slug": "quilmes"}, {"nombre": "Avellaneda", "slug": "avellaneda"}, {"nombre": "Moron", "slug": "moron"}, {"nombre": "Tigre", "slug": "tigre"}, {"nombre": "La Matanza", "slug": "la-matanza"}, {"nombre": "Vicente Lopez", "slug": "vicente-lopez"}, {"nombre": "San Fernando", "slug": "san-fernando"}, {"nombre": "Pilar", "slug": "pilar"}, {"nombre": "Merlo", "slug": "merlo"}, {"nombre": "Moreno", "slug": "moreno"}, {"nombre": "Esteban Echeverria", "slug": "esteban-echeverria"}];
+const todasLasZonas = [{"nombre": "Palermo", "slug": "palermo"}, {"nombre": "Belgrano", "slug": "belgrano"}, {"nombre": "Caballito", "slug": "caballito"}, {"nombre": "Recoleta", "slug": "recoleta"}, {"nombre": "Flores", "slug": "flores"}, {"nombre": "Villa Urquiza", "slug": "villa-urquiza"}, {"nombre": "San Isidro", "slug": "san-isidro"}, {"nombre": "Mataderos", "slug": "mataderos"}, {"nombre": "Nunez", "slug": "nunez"}, {"nombre": "Almagro", "slug": "almagro"}, {"nombre": "San Telmo", "slug": "san-telmo"}, {"nombre": "Villa Devoto", "slug": "villa-devoto"}, {"nombre": "Lomás de Zamora", "slug": "lomas-de-zamora"}, {"nombre": "Quilmes", "slug": "quilmes"}, {"nombre": "Avellaneda", "slug": "avellaneda"}, {"nombre": "Moron", "slug": "moron"}, {"nombre": "Tigre", "slug": "tigre"}, {"nombre": "La Matanza", "slug": "la-matanza"}, {"nombre": "Vicente Lopez", "slug": "vicente-lopez"}, {"nombre": "San Fernando", "slug": "san-fernando"}, {"nombre": "Pilar", "slug": "pilar"}, {"nombre": "Merlo", "slug": "merlo"}, {"nombre": "Moreno", "slug": "moreno"}, {"nombre": "Esteban Echeverria", "slug": "esteban-echeverria"}];
 
 export const metadata: Metadata = {
-  title: "Mudanzas en Vicente Lopez | La Mudanza +30 anos de experiencia",
-  description: "Empresa de mudanzas en Vicente Lopez. Mudanzas en Vicente Lopez, Olivos y Florida. Zona norte del GBA con casas de familia y edificios modernos sobre la costanera. Presupuesto sin cargo. Llamanos al 11-2553-5500.",
+  title: "Mudanzas en Vicente Lopez | La Mudanza +30 años de experiencia",
+  description: "Empresa de mudanzas en Vicente Lopez. Mudanzas en Vicente Lopez, Olivos y Florida. Zona norte del GBA con casas de familia y edificios modernos sobre la costanera. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-vicente-lopez" },
 };
 
@@ -31,7 +31,7 @@ export default function Page() {
         <section className="bg-black py-16 px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-4 text-center text-white">Empresa de mudanzas en Vicente Lopez</h2>
-            <p className="text-gray-300 text-lg text-center">Vicente Lopez es uno de los partidos mas exclusivos del norte del GBA, con una gran variedad de viviendas que van desde casas de familia en barrios tranquilos hasta edificios modernos sobre el Rio de la Plata. En La Mudanza tenemos experiencia en todos los barrios del partido, desde Olivos hasta Florida y Munro.</p>
+            <p className="text-gray-300 text-lg text-center">Vicente Lopez es uno de los partidos más exclusivos del norte del GBA, con una gran variedad de viviendas que van desde casas de familia en barrios tranquilos hasta edificios modernos sobre el Rio de la Plata. En La Mudanza tenemos experiencia en todos los barrios del partido, desde Olivos hasta Florida y Munro.</p>
           </div>
         </section>
 
@@ -64,9 +64,9 @@ export default function Page() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center text-white">Preguntas frecuentes sobre mudanzas en Vicente Lopez</h2>
             <div className="space-y-4">
-              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Cuanto cuesta una mudanza en Vicente Lopez?</h3><p className="text-gray-400">En La Mudanza hacemos presupuestos cerrados y sin cargo porque cada mudanza es diferente. Contactanos por WhatsApp para cotizar.</p></div>
-              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Cubren Olivos y Florida ademas de Vicente Lopez?</h3><p className="text-gray-400">Si, cubrimos todo el partido de Vicente Lopez incluyendo Olivos, Florida, Munro, La Lucila y Carapachay.</p></div>
-              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Hacen mudanzas desde Vicente Lopez a CABA?</h3><p className="text-gray-400">Si, es una de nuestras rutas mas frecuentes. La cercania con Capital hace que sea un traslado rapido y economico.</p></div>
+              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Cuanto cuesta una mudanza en Vicente Lopez?</h3><p className="text-gray-400">En La Mudanza hacemos presupuestos cerrados y sin cargo porque cada mudanza es diferente. Contactaños por WhatsApp para cotizar.</p></div>
+              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Cubren Olivos y Florida además de Vicente Lopez?</h3><p className="text-gray-400">Si, cubrimos todo el partido de Vicente Lopez incluyendo Olivos, Florida, Munro, La Lucila y Carapachay.</p></div>
+              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Hacen mudanzas desde Vicente Lopez a CABA?</h3><p className="text-gray-400">Si, es una de nuestras rutas más frecuentes. La cercania con Capital hace que sea un traslado rápido y economico.</p></div>
               <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Pueden entrar a edificios sobre la costanera de Vicente Lopez?</h3><p className="text-gray-400">Si, tenemos experiencia en los edificios sobre el Rio de la Plata y conocemos los accesos y restricciones de cada zona.</p></div>
             </div>
           </div>
@@ -88,7 +88,7 @@ export default function Page() {
               <Link href="/mudanzas-almagro" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">Almagro</Link>
               <Link href="/mudanzas-san-telmo" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">San Telmo</Link>
               <Link href="/mudanzas-villa-devoto" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">Villa Devoto</Link>
-              <Link href="/mudanzas-lomas-de-zamora" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">Lomas de Zamora</Link>
+              <Link href="/mudanzas-lomas-de-zamora" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">Lomás de Zamora</Link>
               <Link href="/mudanzas-quilmes" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">Quilmes</Link>
               <Link href="/mudanzas-avellaneda" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">Avellaneda</Link>
               <Link href="/mudanzas-moron" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">Moron</Link>
@@ -106,7 +106,7 @@ export default function Page() {
         <section className="bg-orange-500 py-16 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4 text-white">Pedi tu presupuesto sin cargo</h2>
-            <p className="text-white mb-8 opacity-90">Mudanzas en Vicente Lopez con la empresa mas confiable de CABA y GBA.</p>
+            <p className="text-white mb-8 opacity-90">Mudanzas en Vicente Lopez con la empresa más confiable de CABA y GBA.</p>
             <a href="https://wa.me/541125535500" className="bg-white text-orange-500 font-bold py-3 px-8 rounded-full inline-block mr-4">Cotizar por WhatsApp</a>
             <a href="tel:+541125535500" className="border border-white text-white font-bold py-3 px-8 rounded-full inline-block">11-2553-5500</a>
           </div>

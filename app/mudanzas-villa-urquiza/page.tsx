@@ -13,11 +13,11 @@ const servicios = [
   "Mudanzas al interior"
 ];
 
-const todasLasZonas = [{"nombre": "Palermo", "slug": "palermo"}, {"nombre": "Belgrano", "slug": "belgrano"}, {"nombre": "Caballito", "slug": "caballito"}, {"nombre": "Recoleta", "slug": "recoleta"}, {"nombre": "Flores", "slug": "flores"}, {"nombre": "Villa Urquiza", "slug": "villa-urquiza"}, {"nombre": "San Isidro", "slug": "san-isidro"}, {"nombre": "Mataderos", "slug": "mataderos"}, {"nombre": "Nunez", "slug": "nunez"}, {"nombre": "Almagro", "slug": "almagro"}, {"nombre": "San Telmo", "slug": "san-telmo"}, {"nombre": "Villa Devoto", "slug": "villa-devoto"}, {"nombre": "Lomas de Zamora", "slug": "lomas-de-zamora"}, {"nombre": "Quilmes", "slug": "quilmes"}, {"nombre": "Avellaneda", "slug": "avellaneda"}, {"nombre": "Moron", "slug": "moron"}, {"nombre": "Tigre", "slug": "tigre"}, {"nombre": "La Matanza", "slug": "la-matanza"}];
+const todasLasZonas = [{"nombre": "Palermo", "slug": "palermo"}, {"nombre": "Belgrano", "slug": "belgrano"}, {"nombre": "Caballito", "slug": "caballito"}, {"nombre": "Recoleta", "slug": "recoleta"}, {"nombre": "Flores", "slug": "flores"}, {"nombre": "Villa Urquiza", "slug": "villa-urquiza"}, {"nombre": "San Isidro", "slug": "san-isidro"}, {"nombre": "Mataderos", "slug": "mataderos"}, {"nombre": "Nunez", "slug": "nunez"}, {"nombre": "Almagro", "slug": "almagro"}, {"nombre": "San Telmo", "slug": "san-telmo"}, {"nombre": "Villa Devoto", "slug": "villa-devoto"}, {"nombre": "Lomás de Zamora", "slug": "lomas-de-zamora"}, {"nombre": "Quilmes", "slug": "quilmes"}, {"nombre": "Avellaneda", "slug": "avellaneda"}, {"nombre": "Moron", "slug": "moron"}, {"nombre": "Tigre", "slug": "tigre"}, {"nombre": "La Matanza", "slug": "la-matanza"}];
 
 export const metadata: Metadata = {
-  title: "Mudanzas en Villa Urquiza | La Mudanza +30 anos de experiencia",
-  description: "Empresa de mudanzas en Villa Urquiza. Mudanzas en Villa Urquiza, Saavedra y Villa del Parque. Barrio residencial del norte de CABA con gran demanda de mudanzas familiares. Presupuesto sin cargo. Llamanos al 11-2553-5500.",
+  title: "Mudanzas en Villa Urquiza | La Mudanza +30 años de experiencia",
+  description: "Empresa de mudanzas en Villa Urquiza. Mudanzas en Villa Urquiza, Saavedra y Villa del Parque. Barrio residencial del norte de CABA con gran demanda de mudanzas familiares. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-villa-urquiza" },
 };
 
@@ -43,7 +43,7 @@ export default function Page() {
         <section className="bg-black py-16 px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-4 text-center text-white">Empresa de mudanzas en Villa Urquiza</h2>
-            <p className="text-gray-300 text-lg text-center">Villa Urquiza es un barrio de casas con jardin y edificios bajos donde las mudanzas suelen ser mas tranquilas. En La Mudanza hemos realizado cientos de mudanzas en Villa Urquiza y sus alrededores, conocemos el barrio y sabemos como organizarnos para que todo salga perfecto.</p>
+            <p className="text-gray-300 text-lg text-center">Villa Urquiza es un barrio de casas con jardín y edificios bajos donde las mudanzas suelen ser más tranquilas. En La Mudanza hemos realizado cientos de mudanzas en Villa Urquiza y sus alrededores, conocemos el barrio y sabemos como organizarnos para que todo salga perfecto.</p>
           </div>
         </section>
 
@@ -88,7 +88,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center text-white">Preguntas frecuentes sobre mudanzas en Villa Urquiza</h2>
             <div className="space-y-4">
-              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Trabajan en casas con jardin en Villa Urquiza?</h3><p className="text-gray-400">Si, tenemos experiencia en mudanzas de casas con jardin en Villa Urquiza.</p></div>
+              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Trabajan en casas con jardín en Villa Urquiza?</h3><p className="text-gray-400">Si, tenemos experiencia en mudanzas de casas con jardín en Villa Urquiza.</p></div>
               <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Pueden mudarnos desde Villa Urquiza al GBA?</h3><p className="text-gray-400">Si, cubrimos traslados desde Villa Urquiza a todo el Gran Buenos Aires.</p></div>
               <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Cuanto demora una mudanza en Villa Urquiza?</h3><p className="text-gray-400">Depende del volumen y el tipo de inmueble. Te damos un estimado cuando hacemos el presupuesto sin cargo.</p></div>
               <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-6"><h3 className="font-bold text-lg mb-2 text-white">Hacen mudanzas de departamentos en Villa Urquiza?</h3><p className="text-gray-400">Si, coordinamos con los consorcios y respetamos los horarios permitidos.</p></div>
@@ -111,7 +111,7 @@ export default function Page() {
               <Link href="/mudanzas-almagro" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">Almagro</Link>
               <Link href="/mudanzas-san-telmo" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">San Telmo</Link>
               <Link href="/mudanzas-villa-devoto" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">Villa Devoto</Link>
-              <Link href="/mudanzas-lomas-de-zamora" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">Lomas de Zamora</Link>
+              <Link href="/mudanzas-lomas-de-zamora" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">Lomás de Zamora</Link>
               <Link href="/mudanzas-quilmes" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">Quilmes</Link>
               <Link href="/mudanzas-avellaneda" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">Avellaneda</Link>
               <Link href="/mudanzas-moron" className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors">Moron</Link>
@@ -124,7 +124,7 @@ export default function Page() {
         <section className="bg-orange-500 py-16 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4 text-white">Pedi tu presupuesto sin cargo</h2>
-            <p className="text-white mb-8 opacity-90">Mudanzas en Villa Urquiza con la empresa mas confiable de CABA.</p>
+            <p className="text-white mb-8 opacity-90">Mudanzas en Villa Urquiza con la empresa más confiable de CABA.</p>
             <a href="https://wa.me/541125535500" className="bg-white text-orange-500 font-bold py-3 px-8 rounded-full inline-block mr-4">
               Cotizar por WhatsApp
             </a>

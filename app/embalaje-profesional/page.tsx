@@ -27,15 +27,15 @@ export default function Page() {
         <section className="bg-zinc-900 py-16 px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-white mb-4">¿Por que contratar embalaje profesional?</h2>
-            <p className="text-gray-300 text-lg mb-6">El embalaje es la parte mas importante de una mudanza para proteger tus pertenencias. Un mal embalaje puede resultar en vajilla rota, muebles rayados o electrodomesticos danados. En La Mudanza usamos los materiales correctos para cada tipo de objeto y las tecnicas que aprendimos en mas de 30 anos de experiencia.</p>
+            <p className="text-gray-300 text-lg mb-6">El embalaje es la parte más importante de una mudanza para proteger tus pertenencias. Un mal embalaje puede resultar en vajilla rota, muebles rayados o electrodomesticos danados. En La Mudanza usamos los materiales correctos para cada tipo de objeto y las tecnicas que aprendimos en más de 30 años de experiencia.</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
               {[
                 {titulo: "Vajilla y cristaleria", desc: "Embalaje con papel de seda y burbujas para cada pieza. Cajas especiales con divisiones internas."},
-                {titulo: "Cuadros y espejos", desc: "Proteccion con carton corrugado y esquineros. Embalaje personalizado para cada tamano."},
+                {titulo: "Cuadros y espejos", desc: "Proteccion con carton corrugado y esquineros. Embalaje personalizado para cada tamaño."},
                 {titulo: "Muebles", desc: "Mantas acolchadas y film stretch para proteger esquinas, cajones y superficies lacadas."},
-                {titulo: "Electrodomesticos", desc: "Embalaje con burbujas y carton reforzado. Precintado de puertas y cajones moviles."},
+                {titulo: "Electrodomesticos", desc: "Embalaje con burbujas y carton reforzado. Precintado de puertas y cajones móviles."},
                 {titulo: "Ropa y textiles", desc: "Cajas de ropa con barra colgante para trasladar ropa en percha sin arrugar."},
-                {titulo: "Libros y archivos", desc: "Cajas reforzadas de tamano adecuado para evitar dano por peso excesivo."},
+                {titulo: "Libros y archivos", desc: "Cajas reforzadas de tamaño adecuado para evitar dano por peso excesivo."},
               ].map(item => (
                 <div key={item.titulo} className="bg-zinc-800 border border-zinc-700 rounded-lg p-6">
                   <h3 className="font-bold text-orange-400 mb-2">{item.titulo}</h3>

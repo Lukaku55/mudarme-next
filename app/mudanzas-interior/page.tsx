@@ -27,7 +27,7 @@ export default function Page() {
         <section className="bg-zinc-900 py-16 px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-white mb-4">Mudanzas de larga distancia con experiencia</h2>
-            <p className="text-gray-300 text-lg mb-6">Mudarse al interior del pais es una decision importante que requiere una empresa de confianza con experiencia en traslados de larga distancia. En La Mudanza realizamos mudanzas a todas las provincias con camiones propios, personal capacitado y seguimiento en tiempo real de tu carga.</p>
+            <p className="text-gray-300 text-lg mb-6">Mudarse al interior del pais es una decision importante que requiere una empresa de confianza con experiencia en traslados de larga distancia. En La Mudanza realizamos mudanzas a todas las provincias con camiónes propios, personal capacitado y seguimiento en tiempo real de tu carga.</p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
               {["Rosario", "Cordoba", "Mendoza", "Mar del Plata", "Tucuman", "Salta", "Bariloche", "Todo el pais"].map(dest => (
                 <div key={dest} className="bg-zinc-800 border border-zinc-700 rounded-lg p-4 text-center">
