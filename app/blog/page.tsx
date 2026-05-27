@@ -40,6 +40,27 @@ const articulos = [
     categoria: "Consejos",
   },
   {
+    slug: "como-calcular-volumen-mudanza",
+    titulo: "Cómo calcular el volumen de una mudanza",
+    descripcion: "Guía práctica para estimar cuánto ocupa tu mudanza y qué tamaño de camión necesitás. Tablas de referencia por tipo de ambiente.",
+    fecha: "2026-05-07",
+    categoria: "Organización",
+  },
+  {
+    slug: "mudanzas-con-mascotas",
+    titulo: "Cómo mudarse con mascotas sin estrés",
+    descripcion: "Las mascotas sienten el caos de una mudanza tanto como nosotros. Consejos para hacer la transición mucho más tranquila.",
+    fecha: "2026-05-07",
+    categoria: "Consejos",
+  },
+  {
+    slug: "que-hacer-con-muebles-que-no-queres-llevar",
+    titulo: "Qué hacer con los muebles que no querés llevar",
+    descripcion: "Opciones para vender, donar, guardar o desechar los muebles que no vas a necesitar en el nuevo hogar.",
+    fecha: "2026-05-07",
+    categoria: "Organización",
+  },
+  {
     slug: "guardamuebles-cuando-conviene",
     titulo: "Guardamuebles: cuándo conviene y cómo elegir uno",
     descripcion: "Todo sobre el servicio de guardamuebles: qué es, cuándo lo necesitás, cuánto cuesta y qué tener en cuenta al elegir un depósito.",
