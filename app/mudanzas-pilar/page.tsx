@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Mudanzas en Pilar | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Pilar. Mudanzas en Pilar, Del Viso y countries del corredor norte. Especialistas en barrios cerrados y countries de la zona. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-pilar" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-pilar", title: "Mudanzas en Pilar | La Mudanza", description: "Empresa de mudanzas en Pilar, GBA norte. +30 años de experiencia. Presupuesto sin cargo." },
 };
 
 

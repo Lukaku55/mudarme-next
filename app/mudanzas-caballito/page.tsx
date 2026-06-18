@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   title: "Mudanzas en Caballito | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Caballito. Mudanzas en Caballito, Almagro y Flores. El barrio más centrico de CABA con alta rotacion de inquilinos y mudanzas frecuentes. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-caballito" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-caballito", title: "Mudanzas en Caballito | La Mudanza", description: "Empresa de mudanzas en Caballito, Buenos Aires. +30 años de experiencia. Presupuesto sin cargo." },
 };
 
 

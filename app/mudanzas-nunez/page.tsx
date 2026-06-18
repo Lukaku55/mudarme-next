@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   title: "Mudanzas en Nunez | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Nunez. Mudanzas en Nunez, Saavedra y Coghlan. Zona residencial tranquila del norte de CABA con casas de familia y edificios modernos. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-nunez" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-nunez", title: "Mudanzas en Núñez | La Mudanza", description: "Empresa de mudanzas en Núñez, Buenos Aires. +30 años de experiencia. Presupuesto sin cargo." },
 };
 
 

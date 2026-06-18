@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   title: "Mudanzas en Mataderos | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Mataderos. Mudanzas en Mataderos, Liniers y Villa Lugano. Servicio profesional en el sur y oeste de CABA con precios accesibles. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-mataderos" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-mataderos", title: "Mudanzas en Mataderos | La Mudanza", description: "Empresa de mudanzas en Mataderos, Buenos Aires. +30 años de experiencia. Presupuesto sin cargo." },
 };
 
 

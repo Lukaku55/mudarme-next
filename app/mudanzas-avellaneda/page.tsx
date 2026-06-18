@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   title: "Mudanzas en Avellaneda | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Avellaneda. Mudanzas en Avellaneda, Lanus y Dock Sud. Zona sur del GBA lindante con CABA, ideal para traslados rápidos. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-avellaneda" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-avellaneda", title: "Mudanzas en Avellaneda | La Mudanza", description: "Empresa de mudanzas en Avellaneda. Mudanzas en GBA sur. +30 años de experiencia. Presupuesto sin cargo." },
 };
 
 

@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Mudanzas en Moreno | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Moreno. Mudanzas en Moreno, Francisco Alvarez y el corredor oeste del GBA. Servicio profesional a precios accesibles. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-moreno" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-moreno", title: "Mudanzas en Moreno | La Mudanza", description: "Empresa de mudanzas en Moreno, GBA. +30 años de experiencia. Presupuesto sin cargo." },
 };
 
 

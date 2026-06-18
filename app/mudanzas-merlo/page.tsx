@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Mudanzas en Merlo | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Merlo. Mudanzas en Merlo, Libertad y el oeste del GBA. Servicio profesional en uno de los partidos más poblados del conurbano. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-merlo" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-merlo", title: "Mudanzas en Merlo | La Mudanza", description: "Empresa de mudanzas en Merlo, GBA. +30 años de experiencia. Presupuesto sin cargo." },
 };
 
 

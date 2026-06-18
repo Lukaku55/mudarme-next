@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   title: "Mudanzas en Belgrano | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Belgrano. Mudanzas en Belgrano, Nunez y Colegiales. Especialistas en torres de departamentos y casas de familia en uno de los barrios más demandados de CABA. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-belgrano" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-belgrano", title: "Mudanzas en Belgrano | La Mudanza", description: "Empresa de mudanzas en Belgrano, Buenos Aires. +30 años de experiencia. Presupuesto sin cargo." },
 };
 
 

@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Mudanzas en Esteban Echeverria | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Esteban Echeverria. Mudanzas en Esteban Echeverria, Monte Grande y El Jaguel. Cobertura completa en el sur del GBA. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-esteban-echeverria" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-esteban-echeverria", title: "Mudanzas en Esteban Echeverría | La Mudanza", description: "Empresa de mudanzas en Esteban Echeverría, GBA. +30 años de experiencia. Presupuesto sin cargo." },
 };
 
 

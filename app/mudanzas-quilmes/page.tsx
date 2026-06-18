@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   title: "Mudanzas en Quilmes | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Quilmes. Mudanzas en Quilmes, Bernal y Berazategui. Servicio profesional en el sur del GBA con más de 30 años de experiencia. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-quilmes" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-quilmes", title: "Mudanzas en Quilmes | La Mudanza", description: "Empresa de mudanzas en Quilmes, GBA. +30 años de experiencia. Presupuesto sin cargo." },
 };
 
 

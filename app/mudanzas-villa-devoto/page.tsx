@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   title: "Mudanzas en Villa Devoto | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Villa Devoto. Mudanzas en Villa Devoto, Villa del Parque y Monte Castro. Barrios familiares del oeste de CABA con casas amplias. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-villa-devoto" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-villa-devoto", title: "Mudanzas en Villa Devoto | La Mudanza", description: "Empresa de mudanzas en Villa Devoto, Buenos Aires. +30 años de experiencia. Presupuesto sin cargo." },
 };
 
 

@@ -1,6 +1,7 @@
 "use client";
 import { Phone, Mail, MapPin } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import logo from "@/assets/logo-lamudanza.jpeg";
 
 const Footer = () => {
@@ -35,13 +36,20 @@ const Footer = () => {
           {/* Services */}
           <div>
             <h4 className="font-display text-lg mb-4 text-primary">Servicios</h4>
-            <ul className="space-y-2 text-muted-foreground text-sm">
-              <li>Mudanzas residenciales</li>
-              <li>Mudanzas comerciales</li>
-              <li>Embalaje profesional</li>
-              <li>Mudanzas al interior</li>
-              <li>Guardamuebles</li>
-            </ul>
+            <nav className="space-y-2">
+              {[
+                { label: "Mudanzas residenciales", href: "/mudanzas-residenciales" },
+                { label: "Mudanzas comerciales", href: "/mudanzas-comerciales" },
+                { label: "Embalaje profesional", href: "/embalaje-profesional" },
+                { label: "Mudanzas al interior", href: "/mudanzas-interior" },
+                { label: "Guardamuebles", href: "/guardamuebles" },
+                { label: "Izajes por balcón", href: "/izajes" },
+              ].map((s) => (
+                <Link key={s.href} href={s.href} className="block text-muted-foreground hover:text-primary transition-colors text-sm">
+                  {s.label}
+                </Link>
+              ))}
+            </nav>
           </div>
 
           {/* Contact */}

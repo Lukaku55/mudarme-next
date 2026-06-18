@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   title: "Mudanzas en Lomás de Zamora | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Lomás de Zamora. Mudanzas en Lomás de Zamora, Banfield y Temperley. Cobertura completa en el sur del Gran Buenos Aires. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-lomas-de-zamora" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-lomas-de-zamora", title: "Mudanzas en Lomas de Zamora | La Mudanza", description: "Empresa de mudanzas en Lomas de Zamora, GBA. +30 años de experiencia. Presupuesto sin cargo." },
 };
 
 

@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   title: "Mudanzas en San Telmo | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en San Telmo. Mudanzas en San Telmo, La Boca y Constitucion. Expertos en el casco historico de Buenos Aires con edificios de epoca. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-san-telmo" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-san-telmo", title: "Mudanzas en San Telmo | La Mudanza", description: "Empresa de mudanzas en San Telmo, Buenos Aires. +30 años de experiencia. Presupuesto sin cargo." },
 };
 
 

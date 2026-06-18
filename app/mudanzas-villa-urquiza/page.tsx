@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   title: "Mudanzas en Villa Urquiza | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Villa Urquiza. Mudanzas en Villa Urquiza, Saavedra y Villa del Parque. Barrio residencial del norte de CABA con gran demanda de mudanzas familiares. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-villa-urquiza" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-villa-urquiza", title: "Mudanzas en Villa Urquiza | La Mudanza", description: "Empresa de mudanzas en Villa Urquiza, Buenos Aires. +30 años de experiencia. Presupuesto sin cargo." },
 };
 
 

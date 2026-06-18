@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   title: "Mudanzas en Moron | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Moron. Mudanzas en Moron, Haedo y El Palomar. Servicio eficiente en el oeste del Gran Buenos Aires. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-moron" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-moron", title: "Mudanzas en Morón | La Mudanza", description: "Empresa de mudanzas en Morón, GBA. +30 años de experiencia. Presupuesto sin cargo." },
 };
 
 

@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Mudanzas en Vicente Lopez | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Vicente Lopez. Mudanzas en Vicente Lopez, Olivos y Florida. Zona norte del GBA con casas de familia y edificios modernos sobre la costanera. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-vicente-lopez" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-vicente-lopez", title: "Mudanzas en Vicente López | La Mudanza", description: "Empresa de mudanzas en Vicente López, GBA. +30 años de experiencia. Presupuesto sin cargo." },
 };
 
 

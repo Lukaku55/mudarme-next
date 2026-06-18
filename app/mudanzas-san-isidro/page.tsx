@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   title: "Mudanzas en San Isidro | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en San Isidro. Mudanzas en San Isidro, Martinez y Beccar. Especialistas en casas de alto standing y countries del norte del Gran Buenos Aires. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-san-isidro" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-san-isidro", title: "Mudanzas en San Isidro | La Mudanza", description: "Empresa de mudanzas en San Isidro, GBA norte. +30 años de experiencia. Presupuesto sin cargo." },
 };
 
 

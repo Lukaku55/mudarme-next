@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   title: "Mudanzas en Almagro | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Almagro. Mudanzas en Almagro, Boedo y San Cristobal. Barrios clasicos del centro de CABA con gran diversidad de viviendas. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-almagro" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-almagro", title: "Mudanzas en Almagro | La Mudanza", description: "Empresa de mudanzas en Almagro, Buenos Aires. +30 años de experiencia. Presupuesto sin cargo." },
 };
 
 

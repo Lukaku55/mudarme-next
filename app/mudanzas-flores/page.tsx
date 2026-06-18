@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   title: "Mudanzas en Flores | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Flores. Mudanzas en Flores, Floresta y Parque Chacabuco. Servicio rápido y economico en el oeste de CABA con amplia cobertura de barrios. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-flores" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-flores", title: "Mudanzas en Flores | La Mudanza", description: "Empresa de mudanzas en Flores, Buenos Aires. +30 años de experiencia. Presupuesto sin cargo." },
 };
 
 

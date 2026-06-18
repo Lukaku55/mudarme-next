@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   title: "Mudanzas en La Matanza | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en La Matanza. Mudanzas en San Justo, Ramos Mejia y todo el partido de La Matanza. El partido más poblado del GBA. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-la-matanza" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-la-matanza", title: "Mudanzas en La Matanza | La Mudanza", description: "Empresa de mudanzas en La Matanza, GBA. +30 años de experiencia. Presupuesto sin cargo." },
 };
 
 

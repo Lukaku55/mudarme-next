@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   title: "Mudanzas en Tigre | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Tigre. Mudanzas en Tigre, Nordelta y countries del norte del GBA. Experiencia en barrios privados y zonas de isla. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-tigre" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-tigre", title: "Mudanzas en Tigre | La Mudanza", description: "Empresa de mudanzas en Tigre, GBA norte. +30 años de experiencia. Presupuesto sin cargo." },
 };
 
 

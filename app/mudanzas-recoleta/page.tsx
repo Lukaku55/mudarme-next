@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   title: "Mudanzas en Recoleta | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Recoleta. Mudanzas en Recoleta y Barrio Norte. Especialistas en edificios de lujo y manejo de mobiliario de alto valor con total discrecion y cuidado. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-recoleta" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-recoleta", title: "Mudanzas en Recoleta | La Mudanza", description: "Empresa de mudanzas en Recoleta, Buenos Aires. +30 años de experiencia. Presupuesto sin cargo." },
 };
 
 

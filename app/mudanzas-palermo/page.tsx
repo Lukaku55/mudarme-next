@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   title: "Mudanzas en Palermo | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Palermo. Mudanzas en Palermo, Villa Crespo y Palermo Soho. Expertos en edificios con ascensor, cocheras y las calles angostas del barrio más trendy de Buenos Aires. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-palermo" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-palermo", title: "Mudanzas en Palermo | La Mudanza +30 años de experiencia", description: "Empresa de mudanzas en Palermo. Expertos en edificios con ascensor, cocheras y las calles del barrio. Presupuesto sin cargo." },
 };
 
 
