@@ -49,7 +49,7 @@ const ZonasPreview = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-16">
           {servicios.map(s => (
             <Link key={s.slug} href={`/${s.slug}`} className="bg-zinc-900 border border-zinc-700 rounded-lg p-5 hover:border-orange-500 transition-colors text-center">
-              <p className="text-2xl mb-2">{s.icono}</p>
+              <p className="text-2xl mb-2" aria-hidden="true">{s.icono}</p>
               <p className="text-white font-bold text-sm">{s.nombre}</p>
             </Link>
           ))}

@@ -23,7 +23,7 @@ const Footer = () => {
               {["Inicio", "Servicios", "Nosotros", "Testimonios", "Contacto"].map((link) => (
                 <a
                   key={link}
-                  href={`#${link.toLowerCase()}`}
+                  href={`/#${link.toLowerCase()}`}
                   className="block text-muted-foreground hover:text-primary transition-colors text-sm"
                 >
                   {link}
@@ -52,7 +52,7 @@ const Footer = () => {
                 <Phone className="w-4 h-4 text-primary" />
                 11-2553-5500
               </a>
-              <a href="tel:+54111125535500" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
+              <a href="tel:+541125535500" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
                 <Phone className="w-4 h-4 text-primary" />
                 11-2553-5500
               </a>

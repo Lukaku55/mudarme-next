@@ -20,6 +20,24 @@ const articulos = [
     descripcion: "Qué preguntar, qué verificar y qué señales de alerta tener en cuenta antes de contratar.",
     categoria: "Consejos",
   },
+  {
+    slug: "mudanzas-a-fin-de-mes",
+    titulo: "Mudanzas a fin de mes: por qué es más caro y cómo evitarlo",
+    descripcion: "La demanda se dispara a fin de mes. Cómo planificar para ahorrar tiempo y dinero.",
+    categoria: "Consejos",
+  },
+  {
+    slug: "como-calcular-volumen-mudanza",
+    titulo: "Cómo calcular el volumen de una mudanza",
+    descripcion: "Guía práctica para estimar cuánto ocupa tu mudanza y qué tamaño de camión necesitás.",
+    categoria: "Organización",
+  },
+  {
+    slug: "mudanzas-con-mascotas",
+    titulo: "Cómo mudarse con mascotas sin estrés",
+    descripcion: "Consejos para reducir el estrés animal y lograr una transición tranquila al nuevo hogar.",
+    categoria: "Consejos",
+  },
 ];
 
 const BlogPreview = () => {
