@@ -10,7 +10,6 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import BlogPreview from "@/components/BlogPreview";
 import ZonasPreview from "@/components/ZonasPreview";
-import ZonasPreview from "@/components/ZonasPreview";
 
 export const metadata = {
   title: "Mudanzas y Guardamuebles en CABA y GBA | La Mudanza +30 años",
@@ -31,7 +30,6 @@ export default function Home() {
         <QuoteForm />
         <CoverageArea />
       </main>
-      <ZonasPreview />
       <ZonasPreview />
       <BlogPreview />
       <Footer />
