@@ -42,11 +42,23 @@ const breadcrumbSchema = {
   ],
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "¿Pueden mudarnos fuera del horario laboral?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, trabajamos en horario nocturno y fines de semana para que tu negocio no pierda días de trabajo. Coordinamos el traslado para que el lunes ya estés operando." } },
+    { "@type": "Question", "name": "¿Trasladan equipos informáticos y servidores?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, tenemos experiencia en el traslado de equipos informáticos con embalaje especializado. Recomendamos hacer backup antes de la mudanza." } },
+    { "@type": "Question", "name": "¿Cuánto tiempo lleva mudarse de oficina?", "acceptedAnswer": { "@type": "Answer", "text": "Depende del tamaño de la oficina y el volumen de muebles y equipos. Una oficina de 10 puestos puede mudarse en un día. Te damos un plan detallado con el presupuesto." } },
+    { "@type": "Question", "name": "¿Hacen presupuesto sin cargo?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, el presupuesto es cerrado y sin cargo. Nos contactás, nos contás el tamaño de la oficina y coordinamos una visita o cotizamos por WhatsApp." } },
+  ],
+};
+
 export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">
@@ -69,6 +81,25 @@ export default function Page() {
                 <div key={item} className="flex gap-3 items-center bg-zinc-800 border border-zinc-700 rounded-lg p-4">
                   <span className="text-orange-500 font-bold text-lg">✓</span>
                   <span className="text-white">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-black py-16 px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-white mb-8 text-center">Preguntas frecuentes</h2>
+            <div className="space-y-4">
+              {[
+                {q: "¿Pueden mudarnos fuera del horario laboral?", a: "Sí, trabajamos en horario nocturno y fines de semana para que tu negocio no pierda días de trabajo. Coordinamos el traslado para que el lunes ya estés operando."},
+                {q: "¿Trasladan equipos informáticos y servidores?", a: "Sí, tenemos experiencia en el traslado de equipos informáticos con embalaje especializado. Recomendamos hacer backup antes de la mudanza."},
+                {q: "¿Cuánto tiempo lleva mudarse de oficina?", a: "Depende del tamaño de la oficina y el volumen de muebles y equipos. Una oficina de 10 puestos puede mudarse en un día. Te damos un plan detallado con el presupuesto."},
+                {q: "¿Hacen presupuesto sin cargo?", a: "Sí, el presupuesto es cerrado y sin cargo. Nos contactás, nos contás el tamaño de la oficina y coordinamos una visita o cotizamos por WhatsApp."},
+              ].map((faq, i) => (
+                <div key={i} className="bg-zinc-900 border border-zinc-700 rounded-lg p-6">
+                  <h3 className="font-bold text-white mb-2">{faq.q}</h3>
+                  <p className="text-gray-400">{faq.a}</p>
                 </div>
               ))}
             </div>

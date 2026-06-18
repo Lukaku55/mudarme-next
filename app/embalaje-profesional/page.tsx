@@ -42,11 +42,23 @@ const breadcrumbSchema = {
   ],
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "¿Qué materiales usan para el embalaje?", "acceptedAnswer": { "@type": "Answer", "text": "Usamos papel de seda, film burbuja, mantas acolchadas, film stretch, cajas de distintos tamaños y materiales específicos para cada tipo de objeto." } },
+    { "@type": "Question", "name": "¿El servicio de embalaje tiene costo adicional?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, el embalaje profesional tiene un costo adicional que depende del volumen y los materiales necesarios. Lo incluimos en el presupuesto cerrado." } },
+    { "@type": "Question", "name": "¿Pueden embalar solo algunas cosas y el resto lo hago yo?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, podemos hacer un embalaje parcial. Es común que los clientes embalen la ropa y libros, y nos dejen la vajilla, cuadros y objetos delicados a nosotros." } },
+    { "@type": "Question", "name": "¿Qué pasa si algo se rompe durante la mudanza?", "acceptedAnswer": { "@type": "Answer", "text": "Trabajamos con seguro de mudanza. Si algo embalado por nuestro equipo se rompe, cubrimos el daño. Por eso es importante que el embalaje lo hagamos nosotros." } },
+  ],
+};
+
 export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">
@@ -75,6 +87,25 @@ export default function Page() {
                 <div key={item.titulo} className="bg-zinc-800 border border-zinc-700 rounded-lg p-6">
                   <h3 className="font-bold text-orange-400 mb-2">{item.titulo}</h3>
                   <p className="text-gray-400 text-sm">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-black py-16 px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-white mb-8 text-center">Preguntas frecuentes</h2>
+            <div className="space-y-4">
+              {[
+                {q: "¿Qué materiales usan para el embalaje?", a: "Usamos papel de seda, film burbuja, mantas acolchadas, film stretch, cajas de distintos tamaños y materiales específicos para cada tipo de objeto."},
+                {q: "¿El servicio de embalaje tiene costo adicional?", a: "Sí, el embalaje profesional tiene un costo adicional que depende del volumen y los materiales necesarios. Lo incluimos en el presupuesto cerrado."},
+                {q: "¿Pueden embalar solo algunas cosas y el resto lo hago yo?", a: "Sí, podemos hacer un embalaje parcial. Es común que los clientes embalen la ropa y libros, y nos dejen la vajilla, cuadros y objetos delicados a nosotros."},
+                {q: "¿Qué pasa si algo se rompe durante la mudanza?", a: "Trabajamos con seguro de mudanza. Si algo embalado por nuestro equipo se rompe, cubrimos el daño. Por eso es importante que el embalaje lo hagamos nosotros."},
+              ].map((faq, i) => (
+                <div key={i} className="bg-zinc-900 border border-zinc-700 rounded-lg p-6">
+                  <h3 className="font-bold text-white mb-2">{faq.q}</h3>
+                  <p className="text-gray-400">{faq.a}</p>
                 </div>
               ))}
             </div>

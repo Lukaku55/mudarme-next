@@ -43,11 +43,23 @@ const breadcrumbSchema = {
   ],
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "¿Cuánto cuesta una mudanza residencial?", "acceptedAnswer": { "@type": "Answer", "text": "En La Mudanza hacemos presupuestos cerrados y sin cargo porque cada mudanza es diferente. El costo depende del volumen, la distancia y el tipo de inmueble. Contactanos por WhatsApp para cotizar." } },
+    { "@type": "Question", "name": "¿Cuánto tiempo tarda una mudanza residencial?", "acceptedAnswer": { "@type": "Answer", "text": "Un departamento de 2 ambientes demora entre 4 y 8 horas dependiendo del piso, el volumen y si incluye embalaje. Te damos un estimado cuando hacemos el presupuesto." } },
+    { "@type": "Question", "name": "¿Trabajan en edificios sin ascensor?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, tenemos experiencia en edificios sin ascensor y contamos con equipos de izaje para balcones cuando el acceso es complejo." } },
+    { "@type": "Question", "name": "¿Pueden mudarnos un fin de semana?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, trabajamos de lunes a sábado. Para mudanzas en edificios los sábados hay que respetar el horario del consorcio." } },
+  ],
+};
+
 export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">
