@@ -8,11 +8,30 @@ export const metadata: Metadata = {
   title: "Mudanzas a fin de mes: por qué es más caro y cómo evitarlo | La Mudanza",
   description: "La demanda de mudanzas se dispara a fin de mes. Te contamos por qué y cómo planificar para ahorrar tiempo y dinero.",
   alternates: { canonical: "https://www.mudarme.com.ar/blog/mudanzas-a-fin-de-mes" },
+  openGraph: {
+    type: "article",
+    url: "https://www.mudarme.com.ar/blog/mudanzas-a-fin-de-mes",
+    publishedTime: "2025-01-15T00:00:00Z",
+  },
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Mudanzas a fin de mes: por qué es más caro y cómo evitarlo",
+  "description": "La demanda de mudanzas se dispara a fin de mes. Te contamos por qué y cómo planificar para ahorrar tiempo y dinero.",
+  "url": "https://www.mudarme.com.ar/blog/mudanzas-a-fin-de-mes",
+  "datePublished": "2025-01-15",
+  "dateModified": "2025-01-15",
+  "author": { "@type": "Organization", "name": "La Mudanza", "url": "https://www.mudarme.com.ar" },
+  "publisher": { "@type": "Organization", "name": "La Mudanza", "url": "https://www.mudarme.com.ar" },
+  "inLanguage": "es-AR",
 };
 
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">

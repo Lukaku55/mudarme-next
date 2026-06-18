@@ -8,11 +8,30 @@ export const metadata: Metadata = {
   title: "Cómo calcular el volumen de una mudanza | La Mudanza",
   description: "Guía práctica para calcular cuánto volumen tiene tu mudanza y qué tamaño de camión necesitás. Tablas de referencia por tipo de ambiente.",
   alternates: { canonical: "https://www.mudarme.com.ar/blog/como-calcular-volumen-mudanza" },
+  openGraph: {
+    type: "article",
+    url: "https://www.mudarme.com.ar/blog/como-calcular-volumen-mudanza",
+    publishedTime: "2025-07-01T00:00:00Z",
+  },
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Cómo calcular el volumen de una mudanza",
+  "description": "Guía práctica para calcular cuánto volumen tiene tu mudanza y qué tamaño de camión necesitás. Tablas de referencia por tipo de ambiente.",
+  "url": "https://www.mudarme.com.ar/blog/como-calcular-volumen-mudanza",
+  "datePublished": "2025-07-01",
+  "dateModified": "2025-07-01",
+  "author": { "@type": "Organization", "name": "La Mudanza", "url": "https://www.mudarme.com.ar" },
+  "publisher": { "@type": "Organization", "name": "La Mudanza", "url": "https://www.mudarme.com.ar" },
+  "inLanguage": "es-AR",
 };
 
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">

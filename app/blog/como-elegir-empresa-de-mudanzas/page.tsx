@@ -8,11 +8,30 @@ export const metadata: Metadata = {
   title: "Cómo elegir una empresa de mudanzas confiable | La Mudanza",
   description: "Qué preguntar, qué verificar y qué señales de alerta tener en cuenta antes de contratar una empresa de mudanzas en Buenos Aires.",
   alternates: { canonical: "https://www.mudarme.com.ar/blog/como-elegir-empresa-de-mudanzas" },
+  openGraph: {
+    type: "article",
+    url: "https://www.mudarme.com.ar/blog/como-elegir-empresa-de-mudanzas",
+    publishedTime: "2025-02-20T00:00:00Z",
+  },
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Cómo elegir una empresa de mudanzas confiable",
+  "description": "Qué preguntar, qué verificar y qué señales de alerta tener en cuenta antes de contratar una empresa de mudanzas en Buenos Aires.",
+  "url": "https://www.mudarme.com.ar/blog/como-elegir-empresa-de-mudanzas",
+  "datePublished": "2025-02-20",
+  "dateModified": "2025-02-20",
+  "author": { "@type": "Organization", "name": "La Mudanza", "url": "https://www.mudarme.com.ar" },
+  "publisher": { "@type": "Organization", "name": "La Mudanza", "url": "https://www.mudarme.com.ar" },
+  "inLanguage": "es-AR",
 };
 
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">

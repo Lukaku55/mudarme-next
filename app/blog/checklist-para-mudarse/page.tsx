@@ -8,11 +8,30 @@ export const metadata: Metadata = {
   title: "Checklist para mudarse: todo lo que no podés olvidar | La Mudanza",
   description: "La guía definitiva para organizar tu mudanza paso a paso. Qué hacer 4 semanas antes, 1 semana antes y el día de la mudanza.",
   alternates: { canonical: "https://www.mudarme.com.ar/blog/checklist-para-mudarse" },
+  openGraph: {
+    type: "article",
+    url: "https://www.mudarme.com.ar/blog/checklist-para-mudarse",
+    publishedTime: "2025-04-05T00:00:00Z",
+  },
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Checklist para mudarse: todo lo que no podés olvidar",
+  "description": "La guía definitiva para organizar tu mudanza paso a paso. Qué hacer 4 semanas antes, 1 semana antes y el día de la mudanza.",
+  "url": "https://www.mudarme.com.ar/blog/checklist-para-mudarse",
+  "datePublished": "2025-04-05",
+  "dateModified": "2025-04-05",
+  "author": { "@type": "Organization", "name": "La Mudanza", "url": "https://www.mudarme.com.ar" },
+  "publisher": { "@type": "Organization", "name": "La Mudanza", "url": "https://www.mudarme.com.ar" },
+  "inLanguage": "es-AR",
 };
 
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">
