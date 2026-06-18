@@ -66,6 +66,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.mudarme.com.ar/blog/que-hacer-con-muebles-que-no-queres-llevar</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.mudarme.com.ar/mudanzas-palermo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

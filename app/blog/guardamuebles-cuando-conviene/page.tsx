@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "article",
     url: "https://www.mudarme.com.ar/blog/guardamuebles-cuando-conviene",
-    publishedTime: "2025-05-08T00:00:00Z",
+    publishedTime: "2026-05-05T00:00:00Z",
   },
 };
 
@@ -21,17 +21,28 @@ const articleSchema = {
   "headline": "Guardamuebles: cuándo conviene y cómo elegir uno",
   "description": "Todo sobre el servicio de guardamuebles: qué es, cuándo lo necesitás, cuánto cuesta y qué tener en cuenta al elegir un depósito en Buenos Aires.",
   "url": "https://www.mudarme.com.ar/blog/guardamuebles-cuando-conviene",
-  "datePublished": "2025-05-08",
-  "dateModified": "2025-05-08",
+  "datePublished": "2026-05-05",
+  "dateModified": "2026-05-05",
   "author": { "@type": "Organization", "name": "La Mudanza", "url": "https://www.mudarme.com.ar" },
   "publisher": { "@type": "Organization", "name": "La Mudanza", "url": "https://www.mudarme.com.ar" },
   "inLanguage": "es-AR",
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.mudarme.com.ar" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.mudarme.com.ar/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Guardamuebles: cuándo conviene y cómo elegir uno", "item": "https://www.mudarme.com.ar/blog/guardamuebles-cuando-conviene" },
+  ],
 };
 
 export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">

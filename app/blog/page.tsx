@@ -69,9 +69,37 @@ const articulos = [
   },
 ];
 
+const collectionPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Blog de Mudanzas | La Mudanza",
+  "description": "Consejos, guías y todo lo que necesitás saber sobre mudanzas en Buenos Aires.",
+  "url": "https://www.mudarme.com.ar/blog",
+  "publisher": { "@type": "Organization", "name": "La Mudanza", "url": "https://www.mudarme.com.ar" },
+  "inLanguage": "es-AR",
+  "hasPart": articulos.map(a => ({
+    "@type": "Article",
+    "headline": a.titulo,
+    "description": a.descripcion,
+    "url": `https://www.mudarme.com.ar/blog/${a.slug}`,
+    "datePublished": a.fecha,
+  })),
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.mudarme.com.ar" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.mudarme.com.ar/blog" },
+  ],
+};
+
 export default function BlogPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">
