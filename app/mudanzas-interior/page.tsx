@@ -7,11 +7,46 @@ export const metadata: Metadata = {
   title: "Mudanzas al Interior del País | La Mudanza Buenos Aires",
   description: "Mudanzas de larga distancia desde Buenos Aires a todo el interior del pais. Seguimiento en tiempo real y presupuesto sin cargo. La Mudanza, +30 años.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-interior" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-interior" },
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Mudanzas al Interior del País",
+  "description": "Mudanzas de larga distancia desde Buenos Aires a todo el interior del país.",
+  "url": "https://www.mudarme.com.ar/mudanzas-interior",
+  "provider": {
+    "@type": "MovingCompany",
+    "name": "La Mudanza",
+    "telephone": "+541125535500",
+    "url": "https://www.mudarme.com.ar",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": 150
+    }
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Ciudad Autónoma de Buenos Aires" },
+    { "@type": "AdministrativeArea", "name": "Gran Buenos Aires" }
+  ],
+  "serviceType": "Mudanzas al Interior del País"
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.mudarme.com.ar" },
+    { "@type": "ListItem", "position": 2, "name": "Mudanzas al Interior del País", "item": "https://www.mudarme.com.ar/mudanzas-interior" },
+  ],
 };
 
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">

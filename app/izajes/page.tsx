@@ -7,11 +7,46 @@ export const metadata: Metadata = {
   title: "Izajes por Balcón en Buenos Aires | La Mudanza",
   description: "Servicio de izajes por balcon en CABA y GBA. Especialistas en mover muebles que no entran por ascensor o escalera. La Mudanza, +30 años de experiencia.",
   alternates: { canonical: "https://www.mudarme.com.ar/izajes" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/izajes" },
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Izajes por Balcón",
+  "description": "Especialistas en mover muebles grandes que no entran por ascensor o escalera.",
+  "url": "https://www.mudarme.com.ar/izajes",
+  "provider": {
+    "@type": "MovingCompany",
+    "name": "La Mudanza",
+    "telephone": "+541125535500",
+    "url": "https://www.mudarme.com.ar",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": 150
+    }
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Ciudad Autónoma de Buenos Aires" },
+    { "@type": "AdministrativeArea", "name": "Gran Buenos Aires" }
+  ],
+  "serviceType": "Izajes por Balcón"
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.mudarme.com.ar" },
+    { "@type": "ListItem", "position": 2, "name": "Izajes por Balcón", "item": "https://www.mudarme.com.ar/izajes" },
+  ],
 };
 
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">

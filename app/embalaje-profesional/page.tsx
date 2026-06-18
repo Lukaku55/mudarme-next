@@ -7,11 +7,46 @@ export const metadata: Metadata = {
   title: "Embalaje Profesional para Mudanzas | La Mudanza CABA",
   description: "Servicio de embalaje profesional para mudanzas en CABA y GBA. Proteccion total para vajilla, cristaleria, cuadros y muebles delicados. La Mudanza.",
   alternates: { canonical: "https://www.mudarme.com.ar/embalaje-profesional" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/embalaje-profesional" },
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Embalaje Profesional para Mudanzas",
+  "description": "Protección total para vajilla, cristalería, cuadros y muebles delicados.",
+  "url": "https://www.mudarme.com.ar/embalaje-profesional",
+  "provider": {
+    "@type": "MovingCompany",
+    "name": "La Mudanza",
+    "telephone": "+541125535500",
+    "url": "https://www.mudarme.com.ar",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": 150
+    }
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Ciudad Autónoma de Buenos Aires" },
+    { "@type": "AdministrativeArea", "name": "Gran Buenos Aires" }
+  ],
+  "serviceType": "Embalaje Profesional"
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.mudarme.com.ar" },
+    { "@type": "ListItem", "position": 2, "name": "Embalaje Profesional para Mudanzas", "item": "https://www.mudarme.com.ar/embalaje-profesional" },
+  ],
 };
 
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">

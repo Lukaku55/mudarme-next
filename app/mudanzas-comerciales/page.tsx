@@ -7,11 +7,46 @@ export const metadata: Metadata = {
   title: "Mudanzas Comerciales en CABA y GBA | La Mudanza",
   description: "Mudanzas de oficinas y locales comerciales en CABA y GBA. Minimizamos el tiempo de inactividad con planificación integral. La Mudanza, +30 años de experiencia.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-comerciales" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-comerciales" },
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Mudanzas Comerciales en CABA y GBA",
+  "description": "Mudanzas de oficinas y locales comerciales en CABA y GBA.",
+  "url": "https://www.mudarme.com.ar/mudanzas-comerciales",
+  "provider": {
+    "@type": "MovingCompany",
+    "name": "La Mudanza",
+    "telephone": "+541125535500",
+    "url": "https://www.mudarme.com.ar",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": 150
+    }
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Ciudad Autónoma de Buenos Aires" },
+    { "@type": "AdministrativeArea", "name": "Gran Buenos Aires" }
+  ],
+  "serviceType": "Mudanzas Comerciales"
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.mudarme.com.ar" },
+    { "@type": "ListItem", "position": 2, "name": "Mudanzas Comerciales en CABA y GBA", "item": "https://www.mudarme.com.ar/mudanzas-comerciales" },
+  ],
 };
 
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">
