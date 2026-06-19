@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 const fotos = [
   {
@@ -75,7 +76,10 @@ export default function GaleriaTrabajos() {
             </div>
           ))}
         </div>
-        <div className="text-center mt-10">
+        <div className="text-center mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+          <Link href="/galeria" className="border border-zinc-600 hover:border-orange-500 text-gray-300 hover:text-orange-400 font-bold py-3 px-8 rounded-full inline-block transition-colors">
+            Ver galería completa
+          </Link>
           <a href="https://wa.me/541125535500" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full inline-block transition-colors">
             Pedir presupuesto sin cargo
           </a>

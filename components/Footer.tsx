@@ -44,6 +44,7 @@ const Footer = () => {
                 { label: "Mudanzas al interior", href: "/mudanzas-interior" },
                 { label: "Guardamuebles", href: "/guardamuebles" },
                 { label: "Izajes por balcón", href: "/izajes" },
+                { label: "Galería de trabajos", href: "/galeria" },
               ].map((s) => (
                 <Link key={s.href} href={s.href} className="block text-muted-foreground hover:text-primary transition-colors text-sm">
                   {s.label}
