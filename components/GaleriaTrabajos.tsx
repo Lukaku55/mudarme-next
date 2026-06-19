@@ -60,15 +60,16 @@ export default function GaleriaTrabajos() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
           {fotos.map((foto, i) => (
-            <div key={i} className="relative group overflow-hidden rounded-lg aspect-square bg-orange-500">
+            <div key={i} className="relative group overflow-hidden rounded-lg aspect-square">
               <Image
                 src={foto.src}
                 alt={foto.alt}
                 fill
-                className="object-cover grayscale group-hover:scale-105 transition-transform duration-300 mix-blend-multiply opacity-80"
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
                 sizes="(max-width: 768px) 50vw, 33vw"
               />
-              <span className="absolute top-3 left-3 bg-black/70 text-orange-400 text-xs font-bold px-2 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300" />
+              <span className="absolute top-3 left-3 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 {foto.categoria}
               </span>
             </div>
