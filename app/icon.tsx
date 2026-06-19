@@ -11,24 +11,37 @@ export default function Icon() {
         style={{
           width: 32,
           height: 32,
-          background: "#f97316",
-          borderRadius: 6,
+          background: "#1a1a1a",
+          borderRadius: 4,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          position: "relative",
         }}
       >
         <span
           style={{
-            color: "#000",
-            fontSize: 14,
+            color: "#e8e0d0",
+            fontSize: 15,
             fontWeight: 900,
-            fontFamily: "sans-serif",
-            letterSpacing: "-1px",
+            fontFamily: "serif",
+            letterSpacing: "-1.5px",
+            lineHeight: 1,
           }}
         >
           LM
         </span>
+        <div
+          style={{
+            position: "absolute",
+            bottom: 4,
+            left: 4,
+            right: 4,
+            height: 2,
+            background: "#f97316",
+            borderRadius: 1,
+          }}
+        />
       </div>
     ),
     { ...size }
