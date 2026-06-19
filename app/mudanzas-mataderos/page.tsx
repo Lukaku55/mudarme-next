@@ -19,11 +19,52 @@ export const metadata: Metadata = {
   title: "Mudanzas en Mataderos | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Mataderos. Mudanzas en Mataderos, Liniers y Villa Lugano. Servicio profesional en el sur y oeste de CABA con precios accesibles. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-mataderos" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-mataderos", title: "Mudanzas en Mataderos | La Mudanza", description: "Empresa de mudanzas en Mataderos, Buenos Aires. +30 años de experiencia. Presupuesto sin cargo." },
+};
+
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": ["MovingCompany", "LocalBusiness"],
+  "name": "La Mudanza - Mudanzas en Mataderos",
+  "url": "https://www.mudarme.com.ar/mudanzas-mataderos",
+  "telephone": "+541125535500",
+  "email": "Lamudanzamudanzas@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Juan B. Alberdi 2972",
+    "addressLocality": "Buenos Aires",
+    "addressRegion": "CABA",
+    "addressCountry": "AR"
+  },
+  "areaServed": { "@type": "Place", "name": "Mataderos, Buenos Aires" },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": 150
+  },
+  "priceRange": "9056",
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "08:00",
+    "closes": "20:00"
+  }]
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.mudarme.com.ar" },
+    { "@type": "ListItem", "position": 2, "name": "Mudanzas en Mataderos", "item": "https://www.mudarme.com.ar/mudanzas-mataderos" },
+  ],
 };
 
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">

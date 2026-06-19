@@ -11,11 +11,52 @@ export const metadata: Metadata = {
   title: "Mudanzas en Vicente Lopez | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Vicente Lopez. Mudanzas en Vicente Lopez, Olivos y Florida. Zona norte del GBA con casas de familia y edificios modernos sobre la costanera. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-vicente-lopez" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-vicente-lopez", title: "Mudanzas en Vicente López | La Mudanza", description: "Empresa de mudanzas en Vicente López, GBA. +30 años de experiencia. Presupuesto sin cargo." },
+};
+
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": ["MovingCompany", "LocalBusiness"],
+  "name": "La Mudanza - Mudanzas en Vicente López",
+  "url": "https://www.mudarme.com.ar/mudanzas-vicente-lopez",
+  "telephone": "+541125535500",
+  "email": "Lamudanzamudanzas@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Juan B. Alberdi 2972",
+    "addressLocality": "Buenos Aires",
+    "addressRegion": "CABA",
+    "addressCountry": "AR"
+  },
+  "areaServed": { "@type": "Place", "name": "Vicente López, Gran Buenos Aires" },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": 150
+  },
+  "priceRange": "9056",
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "08:00",
+    "closes": "20:00"
+  }]
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.mudarme.com.ar" },
+    { "@type": "ListItem", "position": 2, "name": "Mudanzas en Vicente López", "item": "https://www.mudarme.com.ar/mudanzas-vicente-lopez" },
+  ],
 };
 
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">

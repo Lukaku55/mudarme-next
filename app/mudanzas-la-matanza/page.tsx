@@ -19,11 +19,52 @@ export const metadata: Metadata = {
   title: "Mudanzas en La Matanza | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en La Matanza. Mudanzas en San Justo, Ramos Mejia y todo el partido de La Matanza. El partido más poblado del GBA. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-la-matanza" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-la-matanza", title: "Mudanzas en La Matanza | La Mudanza", description: "Empresa de mudanzas en La Matanza, GBA. +30 años de experiencia. Presupuesto sin cargo." },
+};
+
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": ["MovingCompany", "LocalBusiness"],
+  "name": "La Mudanza - Mudanzas en La Matanza",
+  "url": "https://www.mudarme.com.ar/mudanzas-la-matanza",
+  "telephone": "+541125535500",
+  "email": "Lamudanzamudanzas@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Juan B. Alberdi 2972",
+    "addressLocality": "Buenos Aires",
+    "addressRegion": "CABA",
+    "addressCountry": "AR"
+  },
+  "areaServed": { "@type": "Place", "name": "La Matanza, Gran Buenos Aires" },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": 150
+  },
+  "priceRange": "9056",
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "08:00",
+    "closes": "20:00"
+  }]
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.mudarme.com.ar" },
+    { "@type": "ListItem", "position": 2, "name": "Mudanzas en La Matanza", "item": "https://www.mudarme.com.ar/mudanzas-la-matanza" },
+  ],
 };
 
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">

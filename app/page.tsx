@@ -10,17 +10,32 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import BlogPreview from "@/components/BlogPreview";
 import ZonasPreview from "@/components/ZonasPreview";
-import ZonasPreview from "@/components/ZonasPreview";
+import GaleriaTrabajos from "@/components/GaleriaTrabajos";
 
 export const metadata = {
   title: "Mudanzas y Guardamuebles en CABA y GBA | La Mudanza +30 años",
   description: "La Mudanza: mudanzas residenciales, comerciales y guardamuebles en CABA y GBA. +30 años de experiencia. Presupuesto sin cargo.",
   alternates: { canonical: "https://www.mudarme.com.ar" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar" },
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "La Mudanza",
+  "url": "https://www.mudarme.com.ar",
+  "description": "Empresa de mudanzas residenciales, comerciales y guardamuebles en CABA y GBA con más de 30 años de experiencia.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.mudarme.com.ar/?s={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
 };
 
 export default function Home() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       <Header />
       <main>
         <Hero />
@@ -31,7 +46,7 @@ export default function Home() {
         <QuoteForm />
         <CoverageArea />
       </main>
-      <ZonasPreview />
+      <GaleriaTrabajos />
       <ZonasPreview />
       <BlogPreview />
       <Footer />

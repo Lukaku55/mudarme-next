@@ -2,8 +2,19 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.mudarme.com.ar"),
   title: "Mudanzas y Guardamuebles en CABA y GBA | La Mudanza +30 años",
   description: "La Mudanza: mudanzas residenciales, comerciales y guardamuebles en CABA y GBA. +30 años de experiencia. Presupuesto sin cargo.",
+  openGraph: {
+    siteName: "La Mudanza",
+    locale: "es_AR",
+    type: "website",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "La Mudanza - Empresa de mudanzas en CABA y GBA" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/opengraph-image"],
+  },
 };
 
 export default function RootLayout({

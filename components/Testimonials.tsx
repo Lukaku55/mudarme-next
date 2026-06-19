@@ -85,7 +85,7 @@ const Testimonials = () => {
           <button onClick={prev} className="bg-zinc-800 border border-zinc-700 text-white w-10 h-10 rounded-full hover:border-orange-500 hover:text-orange-500 transition-colors flex items-center justify-center text-lg" aria-label="Anterior">&#8592;</button>
           <div className="flex gap-2">
             {Array.from({length: total}).map((_, i) => (
-              <button key={i} onClick={() => { setAuto(false); setCurrent(i); }} style={{width: i === current ? 16 : 10, height: i === current ? 16 : 10, borderRadius: 99, background: i === current ? "#F97316" : "#71717a", transition: "all 0.3s", border: i === current ? "2px solid #FB923C" : "none"}} />
+              <button key={i} onClick={() => { setAuto(false); setCurrent(i); }} aria-label={`Ver página ${i + 1} de testimonios`} style={{width: i === current ? 16 : 10, height: i === current ? 16 : 10, borderRadius: 99, background: i === current ? "#F97316" : "#71717a", transition: "all 0.3s", border: i === current ? "2px solid #FB923C" : "none"}} />
             ))}
           </div>
           <button onClick={next} className="bg-zinc-800 border border-zinc-700 text-white w-10 h-10 rounded-full hover:border-orange-500 hover:text-orange-500 transition-colors flex items-center justify-center text-lg" aria-label="Siguiente">&#8594;</button>

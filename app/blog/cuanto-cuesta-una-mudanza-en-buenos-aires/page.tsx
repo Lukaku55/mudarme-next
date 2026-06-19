@@ -8,11 +8,41 @@ export const metadata: Metadata = {
   title: "¿Cuánto cuesta una mudanza en Buenos Aires? | La Mudanza",
   description: "Todo lo que influye en el precio de una mudanza en Buenos Aires: volumen, distancia, piso, embalaje y más. Guía completa de La Mudanza.",
   alternates: { canonical: "https://www.mudarme.com.ar/blog/cuanto-cuesta-una-mudanza-en-buenos-aires" },
+  openGraph: {
+    type: "article",
+    url: "https://www.mudarme.com.ar/blog/cuanto-cuesta-una-mudanza-en-buenos-aires",
+    publishedTime: "2026-05-05T00:00:00Z",
+  },
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "¿Cuánto cuesta una mudanza en Buenos Aires?",
+  "description": "Todo lo que influye en el precio de una mudanza en Buenos Aires: volumen, distancia, piso, embalaje y más.",
+  "url": "https://www.mudarme.com.ar/blog/cuanto-cuesta-una-mudanza-en-buenos-aires",
+  "datePublished": "2026-05-05",
+  "dateModified": "2026-05-05",
+  "author": { "@type": "Organization", "name": "La Mudanza", "url": "https://www.mudarme.com.ar" },
+  "publisher": { "@type": "Organization", "name": "La Mudanza", "url": "https://www.mudarme.com.ar" },
+  "inLanguage": "es-AR",
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.mudarme.com.ar" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.mudarme.com.ar/blog" },
+    { "@type": "ListItem", "position": 3, "name": "¿Cuánto cuesta una mudanza en Buenos Aires?", "item": "https://www.mudarme.com.ar/blog/cuanto-cuesta-una-mudanza-en-buenos-aires" },
+  ],
 };
 
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">

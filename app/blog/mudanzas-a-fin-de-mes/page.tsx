@@ -8,11 +8,41 @@ export const metadata: Metadata = {
   title: "Mudanzas a fin de mes: por qué es más caro y cómo evitarlo | La Mudanza",
   description: "La demanda de mudanzas se dispara a fin de mes. Te contamos por qué y cómo planificar para ahorrar tiempo y dinero.",
   alternates: { canonical: "https://www.mudarme.com.ar/blog/mudanzas-a-fin-de-mes" },
+  openGraph: {
+    type: "article",
+    url: "https://www.mudarme.com.ar/blog/mudanzas-a-fin-de-mes",
+    publishedTime: "2026-05-05T00:00:00Z",
+  },
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Mudanzas a fin de mes: por qué es más caro y cómo evitarlo",
+  "description": "La demanda de mudanzas se dispara a fin de mes. Te contamos por qué y cómo planificar para ahorrar tiempo y dinero.",
+  "url": "https://www.mudarme.com.ar/blog/mudanzas-a-fin-de-mes",
+  "datePublished": "2026-05-05",
+  "dateModified": "2026-05-05",
+  "author": { "@type": "Organization", "name": "La Mudanza", "url": "https://www.mudarme.com.ar" },
+  "publisher": { "@type": "Organization", "name": "La Mudanza", "url": "https://www.mudarme.com.ar" },
+  "inLanguage": "es-AR",
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.mudarme.com.ar" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.mudarme.com.ar/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Mudanzas a fin de mes: por qué es más caro y cómo evitarlo", "item": "https://www.mudarme.com.ar/blog/mudanzas-a-fin-de-mes" },
+  ],
 };
 
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">

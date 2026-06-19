@@ -11,11 +11,52 @@ export const metadata: Metadata = {
   title: "Mudanzas en Moreno | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Moreno. Mudanzas en Moreno, Francisco Alvarez y el corredor oeste del GBA. Servicio profesional a precios accesibles. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-moreno" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-moreno", title: "Mudanzas en Moreno | La Mudanza", description: "Empresa de mudanzas en Moreno, GBA. +30 años de experiencia. Presupuesto sin cargo." },
+};
+
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": ["MovingCompany", "LocalBusiness"],
+  "name": "La Mudanza - Mudanzas en Moreno",
+  "url": "https://www.mudarme.com.ar/mudanzas-moreno",
+  "telephone": "+541125535500",
+  "email": "Lamudanzamudanzas@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Juan B. Alberdi 2972",
+    "addressLocality": "Buenos Aires",
+    "addressRegion": "CABA",
+    "addressCountry": "AR"
+  },
+  "areaServed": { "@type": "Place", "name": "Moreno, Gran Buenos Aires" },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": 150
+  },
+  "priceRange": "9056",
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "08:00",
+    "closes": "20:00"
+  }]
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.mudarme.com.ar" },
+    { "@type": "ListItem", "position": 2, "name": "Mudanzas en Moreno", "item": "https://www.mudarme.com.ar/mudanzas-moreno" },
+  ],
 };
 
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">

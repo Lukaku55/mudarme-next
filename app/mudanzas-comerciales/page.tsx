@@ -2,16 +2,64 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Mudanzas Comerciales en CABA y GBA | La Mudanza",
   description: "Mudanzas de oficinas y locales comerciales en CABA y GBA. Minimizamos el tiempo de inactividad con planificación integral. La Mudanza, +30 años de experiencia.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-comerciales" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-comerciales" },
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Mudanzas Comerciales en CABA y GBA",
+  "description": "Mudanzas de oficinas y locales comerciales en CABA y GBA.",
+  "url": "https://www.mudarme.com.ar/mudanzas-comerciales",
+  "provider": {
+    "@type": "MovingCompany",
+    "name": "La Mudanza",
+    "telephone": "+541125535500",
+    "url": "https://www.mudarme.com.ar",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": 150
+    }
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Ciudad Autónoma de Buenos Aires" },
+    { "@type": "AdministrativeArea", "name": "Gran Buenos Aires" }
+  ],
+  "serviceType": "Mudanzas Comerciales"
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.mudarme.com.ar" },
+    { "@type": "ListItem", "position": 2, "name": "Mudanzas Comerciales en CABA y GBA", "item": "https://www.mudarme.com.ar/mudanzas-comerciales" },
+  ],
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "¿Pueden mudarnos fuera del horario laboral?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, trabajamos en horario nocturno y fines de semana para que tu negocio no pierda días de trabajo. Coordinamos el traslado para que el lunes ya estés operando." } },
+    { "@type": "Question", "name": "¿Trasladan equipos informáticos y servidores?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, tenemos experiencia en el traslado de equipos informáticos con embalaje especializado. Recomendamos hacer backup antes de la mudanza." } },
+    { "@type": "Question", "name": "¿Cuánto tiempo lleva mudarse de oficina?", "acceptedAnswer": { "@type": "Answer", "text": "Depende del tamaño de la oficina y el volumen de muebles y equipos. Una oficina de 10 puestos puede mudarse en un día. Te damos un plan detallado con el presupuesto." } },
+    { "@type": "Question", "name": "¿Hacen presupuesto sin cargo?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, el presupuesto es cerrado y sin cargo. Nos contactás, nos contás el tamaño de la oficina y coordinamos una visita o cotizamos por WhatsApp." } },
+  ],
 };
 
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">
@@ -36,6 +84,61 @@ export default function Page() {
                   <span className="text-white">{item}</span>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-black py-16 px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-white mb-8 text-center">Preguntas frecuentes</h2>
+            <div className="space-y-4">
+              {[
+                {q: "¿Pueden mudarnos fuera del horario laboral?", a: "Sí, trabajamos en horario nocturno y fines de semana para que tu negocio no pierda días de trabajo. Coordinamos el traslado para que el lunes ya estés operando."},
+                {q: "¿Trasladan equipos informáticos y servidores?", a: "Sí, tenemos experiencia en el traslado de equipos informáticos con embalaje especializado. Recomendamos hacer backup antes de la mudanza."},
+                {q: "¿Cuánto tiempo lleva mudarse de oficina?", a: "Depende del tamaño de la oficina y el volumen de muebles y equipos. Una oficina de 10 puestos puede mudarse en un día. Te damos un plan detallado con el presupuesto."},
+                {q: "¿Hacen presupuesto sin cargo?", a: "Sí, el presupuesto es cerrado y sin cargo. Nos contactás, nos contás el tamaño de la oficina y coordinamos una visita o cotizamos por WhatsApp."},
+              ].map((faq, i) => (
+                <div key={i} className="bg-zinc-900 border border-zinc-700 rounded-lg p-6">
+                  <h3 className="font-bold text-white mb-2">{faq.q}</h3>
+                  <p className="text-gray-400">{faq.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-zinc-900 py-16 px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold text-white mb-8 text-center">Zonas donde operamos</h2>
+            <div className="mb-6">
+              <h3 className="text-orange-400 font-bold mb-3">Capital Federal</h3>
+              <div className="flex flex-wrap gap-2">
+              <Link href="/mudanzas-palermo" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Palermo</Link>
+              <Link href="/mudanzas-belgrano" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Belgrano</Link>
+              <Link href="/mudanzas-caballito" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Caballito</Link>
+              <Link href="/mudanzas-recoleta" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Recoleta</Link>
+              <Link href="/mudanzas-flores" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Flores</Link>
+              <Link href="/mudanzas-villa-urquiza" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Villa Urquiza</Link>
+              <Link href="/mudanzas-almagro" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Almagro</Link>
+              <Link href="/mudanzas-san-telmo" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">San Telmo</Link>
+              <Link href="/mudanzas-nunez" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Núñez</Link>
+              <Link href="/mudanzas-villa-devoto" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Villa Devoto</Link>
+              <Link href="/mudanzas-mataderos" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Mataderos</Link>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-orange-400 font-bold mb-3">Gran Buenos Aires</h3>
+              <div className="flex flex-wrap gap-2">
+              <Link href="/mudanzas-san-isidro" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">San Isidro</Link>
+              <Link href="/mudanzas-vicente-lopez" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Vicente López</Link>
+              <Link href="/mudanzas-tigre" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Tigre</Link>
+              <Link href="/mudanzas-san-fernando" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">San Fernando</Link>
+              <Link href="/mudanzas-quilmes" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Quilmes</Link>
+              <Link href="/mudanzas-lomas-de-zamora" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Lomas de Zamora</Link>
+              <Link href="/mudanzas-avellaneda" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Avellaneda</Link>
+              <Link href="/mudanzas-moron" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Morón</Link>
+              <Link href="/mudanzas-la-matanza" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">La Matanza</Link>
+              </div>
             </div>
           </div>
         </section>

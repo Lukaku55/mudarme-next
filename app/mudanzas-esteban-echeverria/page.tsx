@@ -11,11 +11,52 @@ export const metadata: Metadata = {
   title: "Mudanzas en Esteban Echeverria | La Mudanza +30 años de experiencia",
   description: "Empresa de mudanzas en Esteban Echeverria. Mudanzas en Esteban Echeverria, Monte Grande y El Jaguel. Cobertura completa en el sur del GBA. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-esteban-echeverria" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-esteban-echeverria", title: "Mudanzas en Esteban Echeverría | La Mudanza", description: "Empresa de mudanzas en Esteban Echeverría, GBA. +30 años de experiencia. Presupuesto sin cargo." },
+};
+
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": ["MovingCompany", "LocalBusiness"],
+  "name": "La Mudanza - Mudanzas en Esteban Echeverría",
+  "url": "https://www.mudarme.com.ar/mudanzas-esteban-echeverria",
+  "telephone": "+541125535500",
+  "email": "Lamudanzamudanzas@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Juan B. Alberdi 2972",
+    "addressLocality": "Buenos Aires",
+    "addressRegion": "CABA",
+    "addressCountry": "AR"
+  },
+  "areaServed": { "@type": "Place", "name": "Esteban Echeverría, Gran Buenos Aires" },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": 150
+  },
+  "priceRange": "9056",
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "08:00",
+    "closes": "20:00"
+  }]
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.mudarme.com.ar" },
+    { "@type": "ListItem", "position": 2, "name": "Mudanzas en Esteban Echeverría", "item": "https://www.mudarme.com.ar/mudanzas-esteban-echeverria" },
+  ],
 };
 
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">

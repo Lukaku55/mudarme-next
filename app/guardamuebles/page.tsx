@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Guardamuebles en CABA y GBA | La Mudanza +30 años",
   description: "Guardamuebles vigilado 24hs en CABA y GBA. Depósitos privados, limpios y seguros para estadías cortas o largas. Presupuesto sin cargo.",
   alternates: { canonical: "https://www.mudarme.com.ar/guardamuebles" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/guardamuebles" },
 };
 
 const faqs = [

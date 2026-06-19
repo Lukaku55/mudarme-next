@@ -8,11 +8,41 @@ export const metadata: Metadata = {
   title: "Cómo calcular el volumen de una mudanza | La Mudanza",
   description: "Guía práctica para calcular cuánto volumen tiene tu mudanza y qué tamaño de camión necesitás. Tablas de referencia por tipo de ambiente.",
   alternates: { canonical: "https://www.mudarme.com.ar/blog/como-calcular-volumen-mudanza" },
+  openGraph: {
+    type: "article",
+    url: "https://www.mudarme.com.ar/blog/como-calcular-volumen-mudanza",
+    publishedTime: "2026-05-07T00:00:00Z",
+  },
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Cómo calcular el volumen de una mudanza",
+  "description": "Guía práctica para calcular cuánto volumen tiene tu mudanza y qué tamaño de camión necesitás. Tablas de referencia por tipo de ambiente.",
+  "url": "https://www.mudarme.com.ar/blog/como-calcular-volumen-mudanza",
+  "datePublished": "2026-05-07",
+  "dateModified": "2026-05-07",
+  "author": { "@type": "Organization", "name": "La Mudanza", "url": "https://www.mudarme.com.ar" },
+  "publisher": { "@type": "Organization", "name": "La Mudanza", "url": "https://www.mudarme.com.ar" },
+  "inLanguage": "es-AR",
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.mudarme.com.ar" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.mudarme.com.ar/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Cómo calcular el volumen de una mudanza", "item": "https://www.mudarme.com.ar/blog/como-calcular-volumen-mudanza" },
+  ],
 };
 
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">

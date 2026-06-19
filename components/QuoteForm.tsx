@@ -51,7 +51,7 @@ const QuoteForm = () => {
               Te responderemos a la brevedad. También podés llamarnos directamente.
             </p>
             <a
-              href="tel:+54111125535500"
+              href="tel:+541125535500"
               className="bg-gradient-brand text-primary-foreground px-8 py-3 rounded-lg font-semibold inline-flex items-center gap-2 shadow-brand"
             >
               <Phone className="w-4 h-4" />
@@ -94,7 +94,7 @@ const QuoteForm = () => {
                 </div>
               </a>
               <a
-                href="tel:+54111125535500"
+                href="tel:+541125535500"
                 className="flex items-center gap-4 p-4 bg-card border border-border rounded-xl hover:border-primary/50 transition-colors"
               >
                 <div className="w-12 h-12 bg-gradient-brand rounded-lg flex items-center justify-center">
@@ -154,6 +154,7 @@ const QuoteForm = () => {
               <input id="email"
                 type="email"
                 name="email"
+                required
                 value={formData.email}
                 onChange={handleChange}
                 className="w-full bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"

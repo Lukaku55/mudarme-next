@@ -1,6 +1,7 @@
 "use client";
 import { Phone, Mail, MapPin } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import logo from "@/assets/logo-lamudanza.jpeg";
 
 const Footer = () => {
@@ -10,7 +11,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="md:col-span-1">
-            <img src={logo.src} alt="La Mudanza - Mudanzas en CABA y Gran Buenos Aires" className="h-14 rounded-xl shadow-elevated mb-4" />
+            <Image src={logo} alt="La Mudanza - Mudanzas en CABA y Gran Buenos Aires" className="h-14 w-auto rounded-xl shadow-elevated mb-4" />
             <p className="text-muted-foreground text-sm leading-relaxed">
               La Mudanza es una empresa familiar con más de 3 décadas de experiencia brindando servicios de mudanza de excelencia en Buenos Aires.
             </p>
@@ -23,7 +24,7 @@ const Footer = () => {
               {["Inicio", "Servicios", "Nosotros", "Testimonios", "Contacto"].map((link) => (
                 <a
                   key={link}
-                  href={`#${link.toLowerCase()}`}
+                  href={`/#${link.toLowerCase()}`}
                   className="block text-muted-foreground hover:text-primary transition-colors text-sm"
                 >
                   {link}
@@ -35,13 +36,20 @@ const Footer = () => {
           {/* Services */}
           <div>
             <h4 className="font-display text-lg mb-4 text-primary">Servicios</h4>
-            <ul className="space-y-2 text-muted-foreground text-sm">
-              <li>Mudanzas residenciales</li>
-              <li>Mudanzas comerciales</li>
-              <li>Embalaje profesional</li>
-              <li>Mudanzas al interior</li>
-              <li>Guardamuebles</li>
-            </ul>
+            <nav className="space-y-2">
+              {[
+                { label: "Mudanzas residenciales", href: "/mudanzas-residenciales" },
+                { label: "Mudanzas comerciales", href: "/mudanzas-comerciales" },
+                { label: "Embalaje profesional", href: "/embalaje-profesional" },
+                { label: "Mudanzas al interior", href: "/mudanzas-interior" },
+                { label: "Guardamuebles", href: "/guardamuebles" },
+                { label: "Izajes por balcón", href: "/izajes" },
+              ].map((s) => (
+                <Link key={s.href} href={s.href} className="block text-muted-foreground hover:text-primary transition-colors text-sm">
+                  {s.label}
+                </Link>
+              ))}
+            </nav>
           </div>
 
           {/* Contact */}
@@ -52,7 +60,7 @@ const Footer = () => {
                 <Phone className="w-4 h-4 text-primary" />
                 11-2553-5500
               </a>
-              <a href="tel:+54111125535500" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
+              <a href="tel:+541125535500" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
                 <Phone className="w-4 h-4 text-primary" />
                 11-2553-5500
               </a>

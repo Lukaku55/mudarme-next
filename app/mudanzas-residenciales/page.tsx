@@ -8,11 +8,58 @@ export const metadata: Metadata = {
   title: "Mudanzas Residenciales en CABA y GBA | La Mudanza",
   description: "Mudanzas de casas y departamentos en CABA y Gran Buenos Aires. Personal capacitado, camiónes propios y presupuesto sin cargo. La Mudanza, +30 años de experiencia.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-residenciales" },
+  openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-residenciales" },
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Mudanzas Residenciales en CABA y GBA",
+  "description": "Mudanzas de casas y departamentos en CABA y Gran Buenos Aires.",
+  "url": "https://www.mudarme.com.ar/mudanzas-residenciales",
+  "provider": {
+    "@type": "MovingCompany",
+    "name": "La Mudanza",
+    "telephone": "+541125535500",
+    "url": "https://www.mudarme.com.ar",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": 150
+    }
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Ciudad Autónoma de Buenos Aires" },
+    { "@type": "AdministrativeArea", "name": "Gran Buenos Aires" }
+  ],
+  "serviceType": "Mudanzas Residenciales"
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.mudarme.com.ar" },
+    { "@type": "ListItem", "position": 2, "name": "Mudanzas Residenciales en CABA y GBA", "item": "https://www.mudarme.com.ar/mudanzas-residenciales" },
+  ],
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "¿Cuánto cuesta una mudanza residencial?", "acceptedAnswer": { "@type": "Answer", "text": "En La Mudanza hacemos presupuestos cerrados y sin cargo porque cada mudanza es diferente. El costo depende del volumen, la distancia y el tipo de inmueble. Contactanos por WhatsApp para cotizar." } },
+    { "@type": "Question", "name": "¿Cuánto tiempo tarda una mudanza residencial?", "acceptedAnswer": { "@type": "Answer", "text": "Un departamento de 2 ambientes demora entre 4 y 8 horas dependiendo del piso, el volumen y si incluye embalaje. Te damos un estimado cuando hacemos el presupuesto." } },
+    { "@type": "Question", "name": "¿Trabajan en edificios sin ascensor?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, tenemos experiencia en edificios sin ascensor y contamos con equipos de izaje para balcones cuando el acceso es complejo." } },
+    { "@type": "Question", "name": "¿Pueden mudarnos un fin de semana?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, trabajamos de lunes a sábado. Para mudanzas en edificios los sábados hay que respetar el horario del consorcio." } },
+  ],
 };
 
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">
@@ -56,6 +103,42 @@ export default function Page() {
                   <p className="text-gray-400">{faq.a}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-zinc-900 py-16 px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold text-white mb-8 text-center">Zonas donde operamos</h2>
+            <div className="mb-6">
+              <h3 className="text-orange-400 font-bold mb-3">Capital Federal</h3>
+              <div className="flex flex-wrap gap-2">
+              <Link href="/mudanzas-palermo" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Palermo</Link>
+              <Link href="/mudanzas-belgrano" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Belgrano</Link>
+              <Link href="/mudanzas-caballito" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Caballito</Link>
+              <Link href="/mudanzas-recoleta" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Recoleta</Link>
+              <Link href="/mudanzas-flores" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Flores</Link>
+              <Link href="/mudanzas-villa-urquiza" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Villa Urquiza</Link>
+              <Link href="/mudanzas-almagro" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Almagro</Link>
+              <Link href="/mudanzas-san-telmo" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">San Telmo</Link>
+              <Link href="/mudanzas-nunez" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Núñez</Link>
+              <Link href="/mudanzas-villa-devoto" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Villa Devoto</Link>
+              <Link href="/mudanzas-mataderos" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Mataderos</Link>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-orange-400 font-bold mb-3">Gran Buenos Aires</h3>
+              <div className="flex flex-wrap gap-2">
+              <Link href="/mudanzas-san-isidro" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">San Isidro</Link>
+              <Link href="/mudanzas-vicente-lopez" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Vicente López</Link>
+              <Link href="/mudanzas-tigre" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Tigre</Link>
+              <Link href="/mudanzas-san-fernando" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">San Fernando</Link>
+              <Link href="/mudanzas-quilmes" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Quilmes</Link>
+              <Link href="/mudanzas-lomas-de-zamora" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Lomas de Zamora</Link>
+              <Link href="/mudanzas-avellaneda" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Avellaneda</Link>
+              <Link href="/mudanzas-moron" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">Morón</Link>
+              <Link href="/mudanzas-la-matanza" className="bg-zinc-900 border border-zinc-700 text-gray-300 hover:border-orange-500 hover:text-orange-400 text-sm py-2 px-4 rounded-full transition-colors">La Matanza</Link>
+              </div>
             </div>
           </div>
         </section>
