@@ -67,6 +67,62 @@ const articulos = [
     fecha: "2026-05-05",
     categoria: "Guardamuebles",
   },
+  {
+    slug: "como-embalar-vajilla-y-cristaleria",
+    titulo: "Cómo embalar vajilla y cristalería para una mudanza",
+    descripcion: "Técnicas profesionales para empacar platos, copas y objetos frágiles sin que nada se rompa durante el traslado.",
+    fecha: "2026-06-24",
+    categoria: "Embalaje",
+  },
+  {
+    slug: "mudanza-de-oficina-consejos",
+    titulo: "Cómo organizar una mudanza de oficina sin perder días de trabajo",
+    descripcion: "Guía práctica para mudarse de oficina minimizando el tiempo de inactividad. Planificación, horarios y coordinación con el equipo.",
+    fecha: "2026-06-24",
+    categoria: "Mudanzas comerciales",
+  },
+  {
+    slug: "cuanto-tiempo-lleva-una-mudanza",
+    titulo: "¿Cuánto tiempo lleva una mudanza? Tiempos por tipo de hogar",
+    descripcion: "Estimaciones reales de cuánto demora una mudanza según el tamaño del hogar, el piso, la distancia y si incluye embalaje profesional.",
+    fecha: "2026-06-24",
+    categoria: "Organización",
+  },
+  {
+    slug: "mudanza-con-ninos-consejos",
+    titulo: "Cómo mudarse con niños: consejos para que la transición sea más fácil",
+    descripcion: "La mudanza puede ser difícil para los chicos. Estrategias para involucrarlos, mantener la rutina y hacer del cambio una experiencia positiva.",
+    fecha: "2026-06-24",
+    categoria: "Consejos",
+  },
+  {
+    slug: "izaje-de-muebles-por-balcon",
+    titulo: "Izaje de muebles por balcón: cuándo es necesario y cómo funciona",
+    descripcion: "Qué es el izaje de muebles, en qué situaciones se usa, cómo se realiza y qué tener en cuenta antes de contratarlo.",
+    fecha: "2026-06-24",
+    categoria: "Servicios",
+  },
+  {
+    slug: "como-organizar-mudanza-rapido",
+    titulo: "Cómo organizar una mudanza rápido: guía para mudarse en menos de 2 semanas",
+    descripcion: "Cuando el tiempo apremia, la organización es clave. Plan de acción para mudarse en poco tiempo sin olvidar nada importante.",
+    fecha: "2026-06-24",
+    categoria: "Organización",
+  },
+  {
+    slug: "que-preguntar-empresa-de-mudanzas",
+    titulo: "10 preguntas que tenés que hacerle a una empresa de mudanzas antes de contratar",
+    descripcion: "No todas las empresas de mudanzas son iguales. Estas preguntas te ayudan a separar las profesionales de las que solo te van a dar problemas.",
+    fecha: "2026-06-24",
+    categoria: "Consejos",
+  },
+  {
+    slug: "guardamuebles-vs-deposito",
+    titulo: "Guardamuebles vs depósito: diferencias y cuál elegir",
+    descripcion: "No son lo mismo. Te explicamos las diferencias entre un guardamuebles y un depósito común, y cómo saber cuál es la mejor opción para tus muebles.",
+    fecha: "2026-06-24",
+    categoria: "Guardamuebles",
+  },
 ];
 
 const collectionPageSchema = {
