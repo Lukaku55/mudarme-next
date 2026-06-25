@@ -167,13 +167,13 @@ export default function BlogPage() {
         </section>
 
         <section className="bg-zinc-900 py-16 px-4">
-          <div className="max-w-4xl mx-auto grid grid-cols-1 gap-8">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {articulos.map(a => (
-              <Link key={a.slug} href={`/blog/${a.slug}`} className="bg-zinc-800 border border-zinc-700 rounded-lg p-8 hover:border-orange-500 transition-colors">
-                <span className="text-orange-400 text-sm uppercase tracking-widest">{a.categoria}</span>
-                <h2 className="text-2xl font-bold text-white mt-2 mb-3">{a.titulo}</h2>
-                <p className="text-gray-400">{a.descripcion}</p>
-                <span className="text-orange-500 font-bold mt-4 inline-block">Leer más →</span>
+              <Link key={a.slug} href={`/blog/${a.slug}`} className="bg-zinc-800 border border-zinc-700 rounded-lg p-6 hover:border-orange-500 transition-colors flex flex-col">
+                <span className="text-orange-400 text-xs uppercase tracking-widest">{a.categoria}</span>
+                <h2 className="text-lg font-bold text-white mt-2 mb-3 flex-1">{a.titulo}</h2>
+                <p className="text-gray-400 text-sm mb-4 line-clamp-2">{a.descripcion}</p>
+                <span className="text-orange-500 font-bold text-sm">Leer más →</span>
               </Link>
             ))}
           </div>
