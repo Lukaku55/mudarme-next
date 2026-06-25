@@ -111,7 +111,7 @@ const articulos = [
   },
   {
     slug: "que-preguntar-empresa-de-mudanzas",
-    titulo: "10 preguntas que tenés que hacerle a una empresa de mudanzas antes de contratar",
+    titulo: "8 preguntas que tenés que hacerle a una empresa de mudanzas antes de contratar",
     descripcion: "No todas las empresas de mudanzas son iguales. Estas preguntas te ayudan a separar las profesionales de las que solo te van a dar problemas.",
     fecha: "2026-06-24",
     categoria: "Consejos",
