@@ -3,8 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.mudarme.com.ar"),
-  title: "Mudanzas y Guardamuebles en CABA y GBA | La Mudanza +30 años",
-  description: "La Mudanza: mudanzas residenciales, comerciales y guardamuebles en CABA y GBA. +30 años de experiencia. Presupuesto sin cargo.",
+  title: "Empresa de Mudanzas en CABA y GBA | Presupuesto sin cargo | La Mudanza",
+  description: "La Mudanza: empresa de mudanzas en CABA y GBA con +30 años. Mudanzas residenciales, comerciales y guardamuebles. Presupuesto cerrado y sin cargo. 5★ en Google.",
   openGraph: {
     siteName: "La Mudanza",
     locale: "es_AR",
@@ -25,7 +25,6 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        <link rel="canonical" href="https://www.mudarme.com.ar" />
         <link rel="icon" type="image/png" href="/favicon.png" />
         <script
           type="application/ld+json"

@@ -17,7 +17,7 @@ const todasLasZonas = [{"nombre": "Palermo", "slug": "palermo"}, {"nombre": "Bel
 
 export const metadata: Metadata = {
   title: "Mudanzas en Belgrano | La Mudanza +30 años de experiencia",
-  description: "Empresa de mudanzas en Belgrano. Mudanzas en Belgrano, Nunez y Colegiales. Especialistas en torres de departamentos y casas de familia en uno de los barrios más demandados de CABA. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
+  description: "Empresa de mudanzas en Belgrano con +30 años. Expertos en torres y PH de Belgrano C, R y Chino. Presupuesto cerrado sin cargo. Cotizá por WhatsApp.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-belgrano" },
   openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-belgrano", title: "Mudanzas en Belgrano | La Mudanza", description: "Empresa de mudanzas en Belgrano, Buenos Aires. +30 años de experiencia. Presupuesto sin cargo." },
 };
@@ -60,11 +60,58 @@ const breadcrumbSchema = {
   ],
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"{s}</h3>
+                  <p className=\"text-gray-400\">Realizamos {s.toLowerCase()} en Belgrano con vehiculos equipados y personal capacitado.</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className=\"bg-black py-16 px-4\">
+          <div className=\"max-w-4xl mx-auto text-center\">
+            <h2 className=\"text-3xl font-bold mb-4 text-white\">Por que elegirnos en Belgrano</h2>
+            <div className=\"grid grid-cols-1 md:grid-cols-3 gap-6 mt-8\">
+              <div className=\"p-6 border border-zinc-700 rounded-lg bg-zinc-800\">
+                <p className=\"text-4xl font-bold text-orange-500\">30</p>
+                <p className=\"font-bold mt-2 text-white\">Anos de experiencia</p>
+                <p className=\"text-gray-400 text-sm mt-1\">Empresa familiar con trayectoria en Belgrano</p>
+              </div>
+              <div className=\"p-6 border border-zinc-700 rounded-lg bg-zinc-800\">
+                <p className=\"text-4xl font-bold text-orange-500\">5.0</p>
+                <p className=\"font-bold mt-2 text-white\">Calificacion Google</p>
+                <p className=\"text-gray-400 text-sm mt-1\">Mas de 150 resenas de clientes satisfechos</p>
+              </div>
+              <div className=\"p-6 border border-zinc-700 rounded-lg bg-zinc-800\">
+                <p className=\"text-4xl font-bold text-orange-500\">5000</p>
+                <p className=\"font-bold mt-2 text-white\">Clientes satisfechos</p>
+                <p className=\"text-gray-400 text-sm mt-1\">Miles de mudanzas realizadas en Belgrano</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className=\"bg-zinc-900 py-16 px-4\">
+          <div className=\"max-w-4xl mx-auto\">
+            <h2 className=\"text-3xl font-bold mb-8 text-center text-white\">Preguntas frecuentes sobre mudanzas en Belgrano</h2>
+            <div className=\"space-y-4\">
+              <div className=\"bg-zinc-800 border border-zinc-700 rounded-lg p-6\"><h3 className=\"font-bold text-lg mb-2 text-white\">Cuanto tarda una mudanza en Belgrano?","acceptedAnswer":{"@type":"Answer","text":"Una mudanza de 2 a 3 ambientes en Belgrano demora entre 4 y 8 horas dependiendo del piso y el volumen. Te damos un tiempo estimado cuando hacemos el presupuesto."}},
+    {"@type":"Question","name":"Pueden gestionar el permiso de carga en Belgrano?","acceptedAnswer":{"@type":"Answer","text":"Si, nos encargamos de coordinar con la administración del edificio y gestionar los permisos necesarios para la carga y descarga en Belgrano."}},
+    {"@type":"Question","name":"Hacen mudanzas en los edificios sobre Libertador?","acceptedAnswer":{"@type":"Answer","text":"Si, tenemos experiencia en los edificios sobre Libertador y todas las arterias principales de Belgrano."}},
+    {"@type":"Question","name":"Trabajan en Belgrano C y Belgrano R?","acceptedAnswer":{"@type":"Answer","text":"Si, cubrimos todo Belgrano incluyendo Belgrano C, Belgrano R y la zona de Barrancas."}}
+  ]
+};
+
 export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">

@@ -16,8 +16,8 @@ const servicios = [
 const todasLasZonas = [{"nombre": "Palermo", "slug": "palermo"}, {"nombre": "Belgrano", "slug": "belgrano"}, {"nombre": "Caballito", "slug": "caballito"}, {"nombre": "Recoleta", "slug": "recoleta"}, {"nombre": "Flores", "slug": "flores"}, {"nombre": "Villa Urquiza", "slug": "villa-urquiza"}, {"nombre": "San Isidro", "slug": "san-isidro"}, {"nombre": "Mataderos", "slug": "mataderos"}, {"nombre": "Nunez", "slug": "nunez"}, {"nombre": "Almagro", "slug": "almagro"}, {"nombre": "San Telmo", "slug": "san-telmo"}, {"nombre": "Villa Devoto", "slug": "villa-devoto"}, {"nombre": "Lomás de Zamora", "slug": "lomas-de-zamora"}, {"nombre": "Quilmes", "slug": "quilmes"}, {"nombre": "Avellaneda", "slug": "avellaneda"}, {"nombre": "Moron", "slug": "moron"}, {"nombre": "Tigre", "slug": "tigre"}, {"nombre": "La Matanza", "slug": "la-matanza"}];
 
 export const metadata: Metadata = {
-  title: "Mudanzas en Palermo | La Mudanza +30 años de experiencia",
-  description: "Empresa de mudanzas en Palermo. Mudanzas en Palermo, Villa Crespo y Palermo Soho. Expertos en edificios con ascensor, cocheras y las calles angostas del barrio más trendy de Buenos Aires. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
+  title: "Mudanzas en Palermo | Empresa con +30 años en el barrio",
+  description: "Empresa de mudanzas en Palermo con +30 años de experiencia. Expertos en PHs, edificios con y sin ascensor e izajes. Presupuesto cerrado y sin cargo. 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-palermo" },
   openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-palermo", title: "Mudanzas en Palermo | La Mudanza +30 años de experiencia", description: "Empresa de mudanzas en Palermo. Expertos en edificios con ascensor, cocheras y las calles del barrio. Presupuesto sin cargo." },
 };
@@ -60,11 +60,23 @@ const breadcrumbSchema = {
   ],
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Cuanto cuesta una mudanza en Palermo?","acceptedAnswer":{"@type":"Answer","text":"En La Mudanza no manejamos precios fijos porque cada mudanza es diferente. El costo depende del volumen, la distancia, el acceso al inmueble y otros factores. Hacemos presupuestos cerrados y sin cargo. Contactaños por WhatsApp."}},
+    {"@type":"Question","name":"Trabajan en edificios sin ascensor en Palermo?","acceptedAnswer":{"@type":"Answer","text":"Si, tenemos amplia experiencia en edificios sin ascensor en Palermo. Contamos con personal capacitado para escaleras y equipos de izaje para balcones cuando es necesario."}},
+    {"@type":"Question","name":"Pueden mudarnos un dia sabado en Palermo?","acceptedAnswer":{"@type":"Answer","text":"Si, trabajamos de lunes a sabado. Para mudanzas en edificios los sabados hay que tener en cuenta el horario habilitado por el consorcio, generalmente hasta las 13hs."}},
+    {"@type":"Question","name":"Hacen mudanzas de oficinas en Palermo?","acceptedAnswer":{"@type":"Answer","text":"Si, somos especialistas en mudanzas de oficinas y locales comerciales en Palermo. Podemos trabajar fuera del horario comercial para no interrumpir tu actividad."}}
+  ]
+};
+
 export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">

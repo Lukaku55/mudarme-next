@@ -16,8 +16,8 @@ const servicios = [
 const todasLasZonas = [{"nombre": "Palermo", "slug": "palermo"}, {"nombre": "Belgrano", "slug": "belgrano"}, {"nombre": "Caballito", "slug": "caballito"}, {"nombre": "Recoleta", "slug": "recoleta"}, {"nombre": "Flores", "slug": "flores"}, {"nombre": "Villa Urquiza", "slug": "villa-urquiza"}, {"nombre": "San Isidro", "slug": "san-isidro"}, {"nombre": "Mataderos", "slug": "mataderos"}, {"nombre": "Nunez", "slug": "nunez"}, {"nombre": "Almagro", "slug": "almagro"}, {"nombre": "San Telmo", "slug": "san-telmo"}, {"nombre": "Villa Devoto", "slug": "villa-devoto"}, {"nombre": "Lomás de Zamora", "slug": "lomas-de-zamora"}, {"nombre": "Quilmes", "slug": "quilmes"}, {"nombre": "Avellaneda", "slug": "avellaneda"}, {"nombre": "Moron", "slug": "moron"}, {"nombre": "Tigre", "slug": "tigre"}, {"nombre": "La Matanza", "slug": "la-matanza"}];
 
 export const metadata: Metadata = {
-  title: "Mudanzas en Flores | La Mudanza +30 años de experiencia",
-  description: "Empresa de mudanzas en Flores. Mudanzas en Flores, Floresta y Parque Chacabuco. Servicio rápido y economico en el oeste de CABA con amplia cobertura de barrios. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
+  title: "Mudanzas en Flores | Empresa confiable | La Mudanza",
+  description: "Mudanzas en Flores y Floresta con +30 años de experiencia. Expertos en el barrio, presupuesto cerrado y sin sorpresas. Cotizá gratis al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-flores" },
   openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-flores", title: "Mudanzas en Flores | La Mudanza", description: "Empresa de mudanzas en Flores, Buenos Aires. +30 años de experiencia. Presupuesto sin cargo." },
 };
@@ -60,11 +60,58 @@ const breadcrumbSchema = {
   ],
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"{s}</h3>
+                  <p className=\"text-gray-400\">Realizamos {s.toLowerCase()} en Flores con vehiculos equipados y personal capacitado.</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className=\"bg-black py-16 px-4\">
+          <div className=\"max-w-4xl mx-auto text-center\">
+            <h2 className=\"text-3xl font-bold mb-4 text-white\">Por que elegirnos en Flores</h2>
+            <div className=\"grid grid-cols-1 md:grid-cols-3 gap-6 mt-8\">
+              <div className=\"p-6 border border-zinc-700 rounded-lg bg-zinc-800\">
+                <p className=\"text-4xl font-bold text-orange-500\">30</p>
+                <p className=\"font-bold mt-2 text-white\">Anos de experiencia</p>
+                <p className=\"text-gray-400 text-sm mt-1\">Empresa familiar con trayectoria en Flores</p>
+              </div>
+              <div className=\"p-6 border border-zinc-700 rounded-lg bg-zinc-800\">
+                <p className=\"text-4xl font-bold text-orange-500\">5.0</p>
+                <p className=\"font-bold mt-2 text-white\">Calificacion Google</p>
+                <p className=\"text-gray-400 text-sm mt-1\">Mas de 150 resenas de clientes satisfechos</p>
+              </div>
+              <div className=\"p-6 border border-zinc-700 rounded-lg bg-zinc-800\">
+                <p className=\"text-4xl font-bold text-orange-500\">5000</p>
+                <p className=\"font-bold mt-2 text-white\">Clientes satisfechos</p>
+                <p className=\"text-gray-400 text-sm mt-1\">Miles de mudanzas realizadas en Flores</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className=\"bg-zinc-900 py-16 px-4\">
+          <div className=\"max-w-4xl mx-auto\">
+            <h2 className=\"text-3xl font-bold mb-8 text-center text-white\">Preguntas frecuentes sobre mudanzas en Flores</h2>
+            <div className=\"space-y-4\">
+              <div className=\"bg-zinc-800 border border-zinc-700 rounded-lg p-6\"><h3 className=\"font-bold text-lg mb-2 text-white\">Hacen mudanzas de casas grandes en Flores?","acceptedAnswer":{"@type":"Answer","text":"Si, somos especialistas en mudanzas de casas de 3, 4 y 5 ambientes en Flores con camiónes de gran capacidad."}},
+    {"@type":"Question","name":"Pueden mudarnos desde Flores al interior del pais?","acceptedAnswer":{"@type":"Answer","text":"Si, hacemos mudanzas desde Flores a cualquier provincia del pais."}},
+    {"@type":"Question","name":"Cuanto cuesta una mudanza de casa en Flores?","acceptedAnswer":{"@type":"Answer","text":"En La Mudanza hacemos presupuestos cerrados y sin cargo. Contactaños por WhatsApp para cotizar."}},
+    {"@type":"Question","name":"Tienen servicio de embalaje en Flores?","acceptedAnswer":{"@type":"Answer","text":"Si, ofrecemos servicio completo de embalaje con todos los materiales necesarios."}}
+  ]
+};
+
 export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">

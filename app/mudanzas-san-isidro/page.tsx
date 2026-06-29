@@ -16,8 +16,8 @@ const servicios = [
 const todasLasZonas = [{"nombre": "Palermo", "slug": "palermo"}, {"nombre": "Belgrano", "slug": "belgrano"}, {"nombre": "Caballito", "slug": "caballito"}, {"nombre": "Recoleta", "slug": "recoleta"}, {"nombre": "Flores", "slug": "flores"}, {"nombre": "Villa Urquiza", "slug": "villa-urquiza"}, {"nombre": "San Isidro", "slug": "san-isidro"}, {"nombre": "Mataderos", "slug": "mataderos"}, {"nombre": "Nunez", "slug": "nunez"}, {"nombre": "Almagro", "slug": "almagro"}, {"nombre": "San Telmo", "slug": "san-telmo"}, {"nombre": "Villa Devoto", "slug": "villa-devoto"}, {"nombre": "Lomás de Zamora", "slug": "lomas-de-zamora"}, {"nombre": "Quilmes", "slug": "quilmes"}, {"nombre": "Avellaneda", "slug": "avellaneda"}, {"nombre": "Moron", "slug": "moron"}, {"nombre": "Tigre", "slug": "tigre"}, {"nombre": "La Matanza", "slug": "la-matanza"}];
 
 export const metadata: Metadata = {
-  title: "Mudanzas en San Isidro | La Mudanza +30 años de experiencia",
-  description: "Empresa de mudanzas en San Isidro. Mudanzas en San Isidro, Martinez y Beccar. Especialistas en casas de alto standing y countries del norte del Gran Buenos Aires. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
+  title: "Mudanzas en San Isidro | La Mudanza GBA Norte",
+  description: "Empresa de mudanzas en San Isidro y GBA Norte. Mudanzas de casas, departamentos y oficinas. +30 años de experiencia. Presupuesto sin cargo.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-san-isidro" },
   openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-san-isidro", title: "Mudanzas en San Isidro | La Mudanza", description: "Empresa de mudanzas en San Isidro, GBA norte. +30 años de experiencia. Presupuesto sin cargo." },
 };
@@ -60,11 +60,58 @@ const breadcrumbSchema = {
   ],
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"{s}</h3>
+                  <p className=\"text-gray-400\">Realizamos {s.toLowerCase()} en San Isidro con vehiculos equipados y personal capacitado.</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className=\"bg-black py-16 px-4\">
+          <div className=\"max-w-4xl mx-auto text-center\">
+            <h2 className=\"text-3xl font-bold mb-4 text-white\">Por que elegirnos en San Isidro</h2>
+            <div className=\"grid grid-cols-1 md:grid-cols-3 gap-6 mt-8\">
+              <div className=\"p-6 border border-zinc-700 rounded-lg bg-zinc-800\">
+                <p className=\"text-4xl font-bold text-orange-500\">30</p>
+                <p className=\"font-bold mt-2 text-white\">Anos de experiencia</p>
+                <p className=\"text-gray-400 text-sm mt-1\">Empresa familiar con trayectoria en San Isidro</p>
+              </div>
+              <div className=\"p-6 border border-zinc-700 rounded-lg bg-zinc-800\">
+                <p className=\"text-4xl font-bold text-orange-500\">5.0</p>
+                <p className=\"font-bold mt-2 text-white\">Calificacion Google</p>
+                <p className=\"text-gray-400 text-sm mt-1\">Mas de 150 resenas de clientes satisfechos</p>
+              </div>
+              <div className=\"p-6 border border-zinc-700 rounded-lg bg-zinc-800\">
+                <p className=\"text-4xl font-bold text-orange-500\">5000</p>
+                <p className=\"font-bold mt-2 text-white\">Clientes satisfechos</p>
+                <p className=\"text-gray-400 text-sm mt-1\">Miles de mudanzas realizadas en San Isidro</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className=\"bg-zinc-900 py-16 px-4\">
+          <div className=\"max-w-4xl mx-auto\">
+            <h2 className=\"text-3xl font-bold mb-8 text-center text-white\">Preguntas frecuentes sobre mudanzas en San Isidro</h2>
+            <div className=\"space-y-4\">
+              <div className=\"bg-zinc-800 border border-zinc-700 rounded-lg p-6\"><h3 className=\"font-bold text-lg mb-2 text-white\">Pueden entrar a countries de San Isidro?","acceptedAnswer":{"@type":"Answer","text":"Si, tenemos experiencia entrando a countries y barrios privados de San Isidro. Gestionamos el permiso de ingreso con anticipación."}},
+    {"@type":"Question","name":"Cuanto cuesta una mudanza a San Isidro desde CABA?","acceptedAnswer":{"@type":"Answer","text":"En La Mudanza hacemos presupuestos cerrados y sin cargo. Contactaños por WhatsApp para cotizar."}},
+    {"@type":"Question","name":"Manejan muebles de lujo en San Isidro?","acceptedAnswer":{"@type":"Answer","text":"Si, usamos mantas acolchadas, film stretch y embalaje especializado para muebles de alto valor."}},
+    {"@type":"Question","name":"Hacen mudanzas de fin de semana en San Isidro?","acceptedAnswer":{"@type":"Answer","text":"Si, trabajamos sabados en San Isidro. Para countries hay que consultar los horarios permitidos por cada administración."}}
+  ]
+};
+
 export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">

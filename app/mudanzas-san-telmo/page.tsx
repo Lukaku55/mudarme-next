@@ -60,11 +60,58 @@ const breadcrumbSchema = {
   ],
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"{s}</h3>
+                  <p className=\"text-gray-400\">Realizamos {s.toLowerCase()} en San Telmo con vehiculos equipados y personal capacitado.</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className=\"bg-black py-16 px-4\">
+          <div className=\"max-w-4xl mx-auto text-center\">
+            <h2 className=\"text-3xl font-bold mb-4 text-white\">Por que elegirnos en San Telmo</h2>
+            <div className=\"grid grid-cols-1 md:grid-cols-3 gap-6 mt-8\">
+              <div className=\"p-6 border border-zinc-700 rounded-lg bg-zinc-800\">
+                <p className=\"text-4xl font-bold text-orange-500\">30</p>
+                <p className=\"font-bold mt-2 text-white\">Anos de experiencia</p>
+                <p className=\"text-gray-400 text-sm mt-1\">Empresa familiar con trayectoria en San Telmo</p>
+              </div>
+              <div className=\"p-6 border border-zinc-700 rounded-lg bg-zinc-800\">
+                <p className=\"text-4xl font-bold text-orange-500\">5.0</p>
+                <p className=\"font-bold mt-2 text-white\">Calificacion Google</p>
+                <p className=\"text-gray-400 text-sm mt-1\">Mas de 150 resenas de clientes satisfechos</p>
+              </div>
+              <div className=\"p-6 border border-zinc-700 rounded-lg bg-zinc-800\">
+                <p className=\"text-4xl font-bold text-orange-500\">5000</p>
+                <p className=\"font-bold mt-2 text-white\">Clientes satisfechos</p>
+                <p className=\"text-gray-400 text-sm mt-1\">Miles de mudanzas realizadas en San Telmo</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className=\"bg-zinc-900 py-16 px-4\">
+          <div className=\"max-w-4xl mx-auto\">
+            <h2 className=\"text-3xl font-bold mb-8 text-center text-white\">Preguntas frecuentes sobre mudanzas en San Telmo</h2>
+            <div className=\"space-y-4\">
+              <div className=\"bg-zinc-800 border border-zinc-700 rounded-lg p-6\"><h3 className=\"font-bold text-lg mb-2 text-white\">Como manejan las calles angostas de San Telmo?","acceptedAnswer":{"@type":"Answer","text":"Usamos camiónes de tamaño apropiado para las calles adoquinadas de San Telmo y conocemos los accesos."}},
+    {"@type":"Question","name":"Pueden mudarnos desde un loft en San Telmo?","acceptedAnswer":{"@type":"Answer","text":"Si, tenemos experiencia en mudanzas de lofts con escaleras industriales y espacios abiertos."}},
+    {"@type":"Question","name":"Trabajan en La Boca y Barracas?","acceptedAnswer":{"@type":"Answer","text":"Si, además de San Telmo cubrimos La Boca, Barracas y Constitucion."}},
+    {"@type":"Question","name":"Cuanto cuesta mudarse en San Telmo?","acceptedAnswer":{"@type":"Answer","text":"En La Mudanza hacemos presupuestos cerrados y sin cargo. Contactaños por WhatsApp para cotizar."}}
+  ]
+};
+
 export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">

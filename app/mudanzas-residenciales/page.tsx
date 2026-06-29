@@ -5,8 +5,8 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Mudanzas Residenciales en CABA y GBA | La Mudanza",
-  description: "Mudanzas de casas y departamentos en CABA y Gran Buenos Aires. Personal capacitado, camiónes propios y presupuesto sin cargo. La Mudanza, +30 años de experiencia.",
+  title: "Mudanzas Residenciales en CABA y GBA | Presupuesto sin cargo",
+  description: "Mudanzas de casas y departamentos en CABA y GBA. Presupuesto cerrado y sin cargo. Personal capacitado, camiones propios, más de 30 años de experiencia. Llamanos al 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-residenciales" },
   openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-residenciales" },
 };

@@ -52,11 +52,46 @@ const breadcrumbSchema = {
   ],
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"{s}</h3>
+                  <p className=\"text-gray-400\">Realizamos {s.toLowerCase()} en Pilar con vehiculos equipados y personal capacitado.</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className=\"bg-black py-16 px-4\">
+          <div className=\"max-w-4xl mx-auto text-center\">
+            <h2 className=\"text-3xl font-bold mb-4 text-white\">Por que elegirnos en Pilar</h2>
+            <div className=\"grid grid-cols-1 md:grid-cols-3 gap-6 mt-8\">
+              <div className=\"p-6 border border-zinc-700 rounded-lg bg-zinc-800\"><p className=\"text-4xl font-bold text-orange-500\">30</p><p className=\"font-bold mt-2 text-white\">Anos de experiencia</p></div>
+              <div className=\"p-6 border border-zinc-700 rounded-lg bg-zinc-800\"><p className=\"text-4xl font-bold text-orange-500\">5.0</p><p className=\"font-bold mt-2 text-white\">Calificacion Google</p></div>
+              <div className=\"p-6 border border-zinc-700 rounded-lg bg-zinc-800\"><p className=\"text-4xl font-bold text-orange-500\">5000</p><p className=\"font-bold mt-2 text-white\">Clientes satisfechos</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section className=\"bg-zinc-900 py-16 px-4\">
+          <div className=\"max-w-4xl mx-auto\">
+            <h2 className=\"text-3xl font-bold mb-8 text-center text-white\">Preguntas frecuentes sobre mudanzas en Pilar</h2>
+            <div className=\"space-y-4\">
+              <div className=\"bg-zinc-800 border border-zinc-700 rounded-lg p-6\"><h3 className=\"font-bold text-lg mb-2 text-white\">Cuanto cuesta una mudanza desde CABA a Pilar?","acceptedAnswer":{"@type":"Answer","text":"En La Mudanza hacemos presupuestos cerrados y sin cargo. La distancia a Pilar implica un costo adicional al traslado local. Contactaños por WhatsApp."}},
+    {"@type":"Question","name":"Pueden entrar a countries de Pilar?","acceptedAnswer":{"@type":"Answer","text":"Si, tenemos experiencia en los principales countries de Pilar. Gestionamos los permisos de ingreso con anticipación."}},
+    {"@type":"Question","name":"Cubren Del Viso y otras localidades de Pilar?","acceptedAnswer":{"@type":"Answer","text":"Si, cubrimos todo el partido de Pilar incluyendo Del Viso, Manzanares y todas las localidades del municipio."}},
+    {"@type":"Question","name":"Con cuanta anticipación hay que reservar para Pilar?","acceptedAnswer":{"@type":"Answer","text":"Para mudanzas a countries de Pilar recomendamos reservar con al menos 10 dias de anticipación."}}
+  ]
+};
+
 export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">

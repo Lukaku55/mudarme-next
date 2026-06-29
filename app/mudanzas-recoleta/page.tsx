@@ -16,8 +16,8 @@ const servicios = [
 const todasLasZonas = [{"nombre": "Palermo", "slug": "palermo"}, {"nombre": "Belgrano", "slug": "belgrano"}, {"nombre": "Caballito", "slug": "caballito"}, {"nombre": "Recoleta", "slug": "recoleta"}, {"nombre": "Flores", "slug": "flores"}, {"nombre": "Villa Urquiza", "slug": "villa-urquiza"}, {"nombre": "San Isidro", "slug": "san-isidro"}, {"nombre": "Mataderos", "slug": "mataderos"}, {"nombre": "Nunez", "slug": "nunez"}, {"nombre": "Almagro", "slug": "almagro"}, {"nombre": "San Telmo", "slug": "san-telmo"}, {"nombre": "Villa Devoto", "slug": "villa-devoto"}, {"nombre": "Lomás de Zamora", "slug": "lomas-de-zamora"}, {"nombre": "Quilmes", "slug": "quilmes"}, {"nombre": "Avellaneda", "slug": "avellaneda"}, {"nombre": "Moron", "slug": "moron"}, {"nombre": "Tigre", "slug": "tigre"}, {"nombre": "La Matanza", "slug": "la-matanza"}];
 
 export const metadata: Metadata = {
-  title: "Mudanzas en Recoleta | La Mudanza +30 años de experiencia",
-  description: "Empresa de mudanzas en Recoleta. Mudanzas en Recoleta y Barrio Norte. Especialistas en edificios de lujo y manejo de mobiliario de alto valor con total discrecion y cuidado. Presupuesto sin cargo. Llamaños al 11-2553-5500.",
+  title: "Mudanzas en Recoleta | Empresa de confianza | La Mudanza",
+  description: "Mudanzas en Recoleta con cuidado profesional. Expertos en edificios históricos, pisos altos y accesos complejos. Presupuesto cerrado sin cargo. Llamanos.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-recoleta" },
   openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-recoleta", title: "Mudanzas en Recoleta | La Mudanza", description: "Empresa de mudanzas en Recoleta, Buenos Aires. +30 años de experiencia. Presupuesto sin cargo." },
 };
@@ -60,11 +60,58 @@ const breadcrumbSchema = {
   ],
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"{s}</h3>
+                  <p className=\"text-gray-400\">Realizamos {s.toLowerCase()} en Recoleta con vehiculos equipados y personal capacitado.</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className=\"bg-black py-16 px-4\">
+          <div className=\"max-w-4xl mx-auto text-center\">
+            <h2 className=\"text-3xl font-bold mb-4 text-white\">Por que elegirnos en Recoleta</h2>
+            <div className=\"grid grid-cols-1 md:grid-cols-3 gap-6 mt-8\">
+              <div className=\"p-6 border border-zinc-700 rounded-lg bg-zinc-800\">
+                <p className=\"text-4xl font-bold text-orange-500\">30</p>
+                <p className=\"font-bold mt-2 text-white\">Anos de experiencia</p>
+                <p className=\"text-gray-400 text-sm mt-1\">Empresa familiar con trayectoria en Recoleta</p>
+              </div>
+              <div className=\"p-6 border border-zinc-700 rounded-lg bg-zinc-800\">
+                <p className=\"text-4xl font-bold text-orange-500\">5.0</p>
+                <p className=\"font-bold mt-2 text-white\">Calificacion Google</p>
+                <p className=\"text-gray-400 text-sm mt-1\">Mas de 150 resenas de clientes satisfechos</p>
+              </div>
+              <div className=\"p-6 border border-zinc-700 rounded-lg bg-zinc-800\">
+                <p className=\"text-4xl font-bold text-orange-500\">5000</p>
+                <p className=\"font-bold mt-2 text-white\">Clientes satisfechos</p>
+                <p className=\"text-gray-400 text-sm mt-1\">Miles de mudanzas realizadas en Recoleta</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className=\"bg-zinc-900 py-16 px-4\">
+          <div className=\"max-w-4xl mx-auto\">
+            <h2 className=\"text-3xl font-bold mb-8 text-center text-white\">Preguntas frecuentes sobre mudanzas en Recoleta</h2>
+            <div className=\"space-y-4\">
+              <div className=\"bg-zinc-800 border border-zinc-700 rounded-lg p-6\"><h3 className=\"font-bold text-lg mb-2 text-white\">Como protegen los muebles de valor en Recoleta?","acceptedAnswer":{"@type":"Answer","text":"Usamos mantas acolchadas profesionales, film stretch, cantoneras y cajas especiales para cada tipo de objeto."}},
+    {"@type":"Question","name":"Son discretos con las mudanzas en edificios de Recoleta?","acceptedAnswer":{"@type":"Answer","text":"Si, nuestro personal trabaja de forma profesional y silenciosa, respetando a los demás vecinos."}},
+    {"@type":"Question","name":"Pueden mover piaños o antiguedades en Recoleta?","acceptedAnswer":{"@type":"Answer","text":"Si, tenemos experiencia en el traslado de piaños, obras de arte y antiguedades con tecnicas y equipamiento especifico."}},
+    {"@type":"Question","name":"Trabajan con administraciónes de edificios en Recoleta?","acceptedAnswer":{"@type":"Answer","text":"Si, coordinamos directamente con las administraciónes y porteros de los edificios de Recoleta."}}
+  ]
+};
+
 export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Header />
       <main className="pt-20">
         <section className="bg-black text-white py-16 px-4">
