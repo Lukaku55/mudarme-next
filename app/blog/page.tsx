@@ -124,13 +124,6 @@ const articulos = [
     categoria: "Guardamuebles",
   },
   {
-    slug: "mudanza-express-mismo-dia",
-    titulo: "Mudanza express: cómo mudarse en el mismo día",
-    descripcion: "¿Necesitás mudarte urgente? Cómo organizar una mudanza express en el mismo día o en menos de 48 horas en Buenos Aires sin perder nada en el camino.",
-    fecha: "2026-07-02",
-    categoria: "Organización",
-  },
-  {
     slug: "como-armar-cajas-mudanza",
     titulo: "Cómo armar cajas para una mudanza: guía paso a paso",
     descripcion: "La técnica correcta para armar y cargar cajas de mudanza. Qué materiales usar, cómo distribuir el peso y cómo evitar que las cajas se rompan.",
