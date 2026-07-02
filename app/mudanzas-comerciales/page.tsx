@@ -5,8 +5,8 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Mudanzas de Oficinas y Comercios en CABA y GBA | La Mudanza",
-  description: "Mudanzas comerciales y de oficinas en CABA y GBA sin perder días de trabajo. Horarios flexibles, planificación integral. +30 años de experiencia. Cotizá gratis.",
+  title: "Mudanzas Comerciales en Buenos Aires | La Mudanza ⭐5.0",
+  description: "Mudanzas de oficinas y locales en CABA y GBA sin perder días de trabajo. Horarios flexibles, planificación integral. +30 años. Cotizá gratis.",
   alternates: { canonical: "https://www.mudarme.com.ar/mudanzas-comerciales" },
   openGraph: { type: "website", url: "https://www.mudarme.com.ar/mudanzas-comerciales" },
 };

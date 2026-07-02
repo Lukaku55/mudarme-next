@@ -4,8 +4,8 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Guardamuebles en CABA y GBA | Depósito vigilado 24hs | La Mudanza",
-  description: "Guardamuebles privado, limpio y vigilado 24hs en CABA y GBA. Estadías cortas o largas. Sin cláusulas ni penalidades. Presupuesto sin cargo → 11-2553-5500.",
+  title: "Guardamuebles en Buenos Aires | Depósito 24hs | La Mudanza",
+  description: "Guardamuebles privado, limpio y vigilado 24hs en CABA y GBA. Estadías desde 1 mes. Sin cláusulas. Presupuesto sin cargo → 11-2553-5500.",
   alternates: { canonical: "https://www.mudarme.com.ar/guardamuebles" },
   openGraph: { type: "website", url: "https://www.mudarme.com.ar/guardamuebles" },
 };

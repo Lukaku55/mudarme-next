@@ -5,8 +5,8 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Embalaje Profesional para Mudanzas en CABA | La Mudanza",
-  description: "Embalaje profesional para mudanzas en CABA y GBA. Protección total con materiales especializados para vajilla, cristalería, cuadros y muebles delicados. Sin roturas garantizado.",
+  title: "Embalaje Profesional para Mudanzas | Buenos Aires | La Mudanza",
+  description: "Embalaje profesional con materiales especializados en CABA y GBA. Protección total para vajilla, cristalería, cuadros y muebles. Sin roturas garantizado.",
   alternates: { canonical: "https://www.mudarme.com.ar/embalaje-profesional" },
   openGraph: { type: "website", url: "https://www.mudarme.com.ar/embalaje-profesional" },
 };

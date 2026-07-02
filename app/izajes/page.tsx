@@ -5,8 +5,8 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Izajes por Balcón en Buenos Aires | La Mudanza",
-  description: "Servicio de izajes por balcon en CABA y GBA. Especialistas en mover muebles que no entran por ascensor o escalera. La Mudanza, +30 años de experiencia.",
+  title: "Izaje de Muebles por Balcón en CABA | La Mudanza",
+  description: "Servicio de izaje de muebles por balcón en CABA y GBA. Equipo profesional para camas, placares y sofás en pisos altos sin ascensor. Cotizá ya.",
   alternates: { canonical: "https://www.mudarme.com.ar/izajes" },
   openGraph: { type: "website", url: "https://www.mudarme.com.ar/izajes" },
 };
