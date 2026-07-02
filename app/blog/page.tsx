@@ -123,6 +123,62 @@ const articulos = [
     fecha: "2026-06-24",
     categoria: "Guardamuebles",
   },
+  {
+    slug: "mudanza-express-mismo-dia",
+    titulo: "Mudanza express: cómo mudarse en el mismo día",
+    descripcion: "¿Necesitás mudarte urgente? Cómo organizar una mudanza express en el mismo día o en menos de 48 horas en Buenos Aires sin perder nada en el camino.",
+    fecha: "2026-07-02",
+    categoria: "Organización",
+  },
+  {
+    slug: "como-armar-cajas-mudanza",
+    titulo: "Cómo armar cajas para una mudanza: guía paso a paso",
+    descripcion: "La técnica correcta para armar y cargar cajas de mudanza. Qué materiales usar, cómo distribuir el peso y cómo evitar que las cajas se rompan.",
+    fecha: "2026-07-02",
+    categoria: "Embalaje",
+  },
+  {
+    slug: "seguro-de-mudanza",
+    titulo: "Seguro de mudanza: qué cubre, qué no y cómo proteger tus pertenencias",
+    descripcion: "¿Tu mudanza está asegurada? Todo lo que necesitás saber sobre los seguros de mudanza en Argentina: qué cubren, cómo funcionan y qué hacer si algo se daña.",
+    fecha: "2026-07-02",
+    categoria: "Consejos",
+  },
+  {
+    slug: "mudanza-de-piano",
+    titulo: "Cómo mover un piano: lo que tenés que saber antes de llamar",
+    descripcion: "Mover un piano es una de las tareas más complejas en una mudanza. Peso, tamaño, acceso y afinación: todo lo que debés considerar antes de contratar el servicio.",
+    fecha: "2026-07-02",
+    categoria: "Servicios",
+  },
+  {
+    slug: "primer-departamento-mudanza",
+    titulo: "Primer departamento: guía completa para tu primera mudanza independiente",
+    descripcion: "¿Te mudás solo por primera vez? Qué llevar, qué no olvidar, cómo planificar el presupuesto y los errores más comunes en la primera mudanza independiente.",
+    fecha: "2026-07-02",
+    categoria: "Organización",
+  },
+  {
+    slug: "inventario-para-mudanza",
+    titulo: "Cómo hacer un inventario para tu mudanza (y por qué es imprescindible)",
+    descripcion: "Un inventario detallado antes de mudarte te ahorra tiempo, dinero y dolores de cabeza. Cómo hacerlo paso a paso, qué incluir y qué herramientas usar.",
+    fecha: "2026-07-02",
+    categoria: "Organización",
+  },
+  {
+    slug: "cuanto-cobran-los-fleteros",
+    titulo: "¿Cuánto cobran los fleteros en Buenos Aires? Precios y diferencias clave",
+    descripcion: "Guía de precios de fleteros en Buenos Aires. La diferencia entre un fletero informal y una empresa de mudanzas, qué incluye cada uno y cuándo conviene cada opción.",
+    fecha: "2026-07-02",
+    categoria: "Precios y presupuestos",
+  },
+  {
+    slug: "mudanzas-en-edificios-reglamento",
+    titulo: "Mudanzas en edificios: el reglamento de copropiedad y todo lo que tenés que saber",
+    descripcion: "Cada edificio tiene sus reglas para mudanzas. Horarios habilitados, uso del ascensor, depósito al consorcio y más. Guía completa para mudarte sin problemas.",
+    fecha: "2026-07-02",
+    categoria: "Consejos",
+  },
 ];
 
 const collectionPageSchema = {
